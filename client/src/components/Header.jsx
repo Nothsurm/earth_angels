@@ -17,7 +17,7 @@ export default function Header() {
 
   window.addEventListener('scroll', changeBackground)
   return (
-    <div className={ navbar ? "flex justify-around fixed z-20 text-white items-center bg-black h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-white items-center bg-black h-48 transition-all duration-200 w-full"}>
+    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center bg-black h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center bg-black h-48 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex gap-10">
         <Dropdown
           arrowIcon={true}
@@ -140,7 +140,7 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
         </Dropdown>
-        <Button>Contact Us</Button>
+        <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-14'>Contact Us</button>
         <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
         <button 
           onClick={() => filePickerRef.current.click()}

@@ -26,9 +26,9 @@ export default function Louisa() {
             <h1 className='font-semibold text-xl text-center'>Louisa Payne - Founder & CEO</h1>
           </div>
         </div>
-        <div className="flex-1 flex-col gap-10 mt-6">
-          <img src={Image} alt="image" className='h-48 w-80 mx-auto'/>
-          <img src={Image} alt="image" className='h-48 w-80 mt-2 mx-auto'/>
+        <div className="flex-1 flex-col gap-10 mt-10">
+          <img src={Image} alt="image" className='h-48 w-80 mx-auto rounded-md shadow-md'/>
+          <img src={Image} alt="image" className='h-48 w-80 mt-2 mx-auto rounded-md shadow-md'/>
         </div>
       </div>
     </div>

@@ -1,0 +1,37 @@
+import Image from '../../images/house-image.jpg'
+import { MdEmail } from "react-icons/md";
+
+export default function WhatWeDo3() {
+  return (
+    <div className='flex flex-row justify-between max-w-6xl mx-auto mt-32'>
+        <div className="flex-1 flex-col relative text-stone-700">
+            <h1 className='font-bold text-3xl'>WE SUPPLY ULTRA-SUSTAINABLE ACCOMMODATION SOLUTIONS
+            <hr
+                style={{
+                background: 'orange',
+                color: 'orange',
+                borderColor: 'orange',
+                height: '2px',
+                width: '60px',
+                position: 'absolute',
+                top: '31%',
+                left: '8%',
+                transform: 'translate(-50%, -50%)'
+                }}
+            /></h1>
+            <p className='mt-14 leading-relaxed'>We champion modern methods of manufacture and build as it offers a significant and measurable sustainable approach.<br></br><br></br>
+
+            Our buildings are precision manufactured and are quick to be assembled onsite, reducing our environmental impact and any potential operational impact on our clients’ business.</p>
+            <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-14'>Contact Us<MdEmail /></button>
+        </div>
+        <div className="flex-1">
+            <img src={Image} alt="image" className='h-64 w-80 mx-auto rounded-md shadow-lg hover:scale-105 transition duration-300'/>
+            <img src={Image} alt="image" className='h-64 w-80 mx-auto mt-6 rounded-md shadow-lg hover:scale-105 transition duration-300'/>
+        </div>
+        <div className="flex-1">
+            <img src={Image} alt="image" className='h-80 w-80 mx-auto rounded-md shadow-lg hover:scale-105 transition duration-300'/>
+            <img src={Image} alt="image" className='h-36 w-80 mx-auto mt-6 rounded-md shadow-lg hover:scale-105 transition duration-300'/>
+        </div>
+    </div>
+  )
+}

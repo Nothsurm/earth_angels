@@ -6,6 +6,8 @@ import Louisa from './DropdownComponents.jsx/Louisa'
 import WhatWeDo from './DropdownComponents.jsx/WhatWeDo'
 import Testimonials from './DropdownComponents.jsx/Testimonials'
 import WhatWeDo2 from './DropdownComponents.jsx/WhatWeDo2'
+import WhatWeDo3 from './DropdownComponents.jsx/WhatWeDo3'
+import ComingSoon from './DropdownComponents.jsx/ComingSoon'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
@@ -158,7 +160,7 @@ export default function Header() {
               </Link>
             </Dropdown.Header>
           </Dropdown>
-          <Button>Contact Us</Button>
+          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center'>Contact Us</button>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
             onClick={() => filePickerRef.current.click()}
@@ -180,6 +182,12 @@ export default function Header() {
       </div>
       <div>
         <WhatWeDo2 />
+      </div>
+      <div>
+        <WhatWeDo3 />
+      </div>
+      <div>
+        <ComingSoon />
       </div>
       <div className="testimonials min-h-screen" ref={testimonialRef}>
         <Testimonials />

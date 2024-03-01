@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
-import Footer from './components/Footer'
+import FooterSection from './components/FooterSection'
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
       <main>
         <Outlet />
       </main>
-      <Footer />
+      <FooterSection />
     </>
   )
 }
