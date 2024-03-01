@@ -32,7 +32,7 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
           <Dropdown.Header>
-            <Link to='/'>
+            <Link to='/louisa'>
               <span>Louisa</span>
             </Link>
           </Dropdown.Header>
