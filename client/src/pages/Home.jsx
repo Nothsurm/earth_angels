@@ -5,6 +5,7 @@ import Hero from './DropdownComponents.jsx/Hero'
 import Louisa from './DropdownComponents.jsx/Louisa'
 import WhatWeDo from './DropdownComponents.jsx/WhatWeDo'
 import Testimonials from './DropdownComponents.jsx/Testimonials'
+import WhatWeDo2 from './DropdownComponents.jsx/WhatWeDo2'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
@@ -174,8 +175,11 @@ export default function Header() {
       <div className="" ref={louisaRef}>
         <Louisa />
       </div>
-      <div className="what-we-do min-h-screen">
+      <div className="min-h-screen">
         <WhatWeDo />
+      </div>
+      <div>
+        <WhatWeDo2 />
       </div>
       <div className="testimonials min-h-screen" ref={testimonialRef}>
         <Testimonials />

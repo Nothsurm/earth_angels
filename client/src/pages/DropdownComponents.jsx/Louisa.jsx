@@ -27,8 +27,8 @@ export default function Louisa() {
           </div>
         </div>
         <div className="flex-1 flex-col gap-10 mt-6">
-          <img src={Image} alt="image" className='h-48 w-80'/>
-          <img src={Image} alt="image" className='h-48 w-80 mt-2'/>
+          <img src={Image} alt="image" className='h-48 w-80 mx-auto'/>
+          <img src={Image} alt="image" className='h-48 w-80 mt-2 mx-auto'/>
         </div>
       </div>
     </div>
