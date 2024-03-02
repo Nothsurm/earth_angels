@@ -17,7 +17,7 @@ export default function Header() {
 
   window.addEventListener('scroll', changeBackground)
   return (
-    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center bg-black h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center bg-black h-48 transition-all duration-200 w-full"}>
+    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center bg-zinc-700 h-48 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex gap-10">
         <Dropdown
           arrowIcon={true}
