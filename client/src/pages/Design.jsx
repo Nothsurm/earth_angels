@@ -33,24 +33,24 @@ export default function Design() {
         <div className="min-h-screen bg-neutral-100 text-stone-700">
             <div className="flex flex-row justify-center gap-10 max-w-6xl mx-auto">
                 <div className="max-w-lg text-center">
-                    <img src={Image} alt="" className='rounded-lg scale-75 hover:scale-90 transition duration-300'/>
+                    <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Mood Boards</h1>
                     <p className='mt-4'>We use Mood Boards extensively to visualise our customers vision or to walk through our recommendations</p>
                 </div>
                 <div className="max-w-lg text-center">
-                    <img src={Image} alt="" className='rounded-lg scale-75 hover:scale-90 transition duration-300'/>
+                    <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>CGI's</h1>
                     <p className='mt-4'>CGI's (Computer Generated Images) enables us to visualise the actual look and feel of a project, enabling sign off and early commercial promotion & marketing activities</p>
                 </div>
             </div>
             <div className="flex flex-row justify-center gap-10 max-w-6xl mx-auto">
                 <div className="max-w-lg text-center">
-                    <img src={Image} alt="" className='rounded-lg scale-75 hover:scale-90 transition duration-300'/>
+                    <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Detailed Plans</h1>
                     <p className='mt-4'>Floor plans and elevations are combined with masterplanning to ensure all design and access considerations are fully documented</p>
                 </div>
                 <div className="max-w-lg text-center">
-                    <img src={Image} alt="" className='rounded-lg scale-75 hover:scale-90 transition duration-300'/>
+                    <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Professional Marketing</h1>
                     <p className='mt-4'>For commercial use, the materials we create during the Design process enables effective promotional activity to start early, even before work starts on-site</p>
                 </div>

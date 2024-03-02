@@ -34,9 +34,22 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-                <div className="flex-1 flex flex-col gap-4">
-                    <h1 className='font-bold text-3xl'>CONTACT INFO</h1>
-                    <h2 className='font-bold text-xl'>Address</h2>
+                <div className="flex-1 flex flex-col gap-4 relative">
+                    <h1 className='font-bold text-3xl'>CONTACT INFO
+                    <hr
+                        style={{
+                        background: 'orange',
+                        color: 'orange',
+                        borderColor: 'orange',
+                        height: '2px',
+                        width: '60px',
+                        position: 'absolute',
+                        top: '14%',
+                        left: '7%',
+                        transform: 'translate(-50%, -50%)'
+                        }}
+                    /></h1>
+                    <h2 className='font-bold text-xl mt-10'>Address</h2>
                     <p>FemalEvolution Unipessoal Lda, UALG Gambelas PAV B1, 8005-139, FARO</p>
                     <h2 className='font-bold text-xl'>Email Us</h2>
                     <p>contact@earth-angels.org</p>

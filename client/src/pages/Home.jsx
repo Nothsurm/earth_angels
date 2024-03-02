@@ -15,6 +15,7 @@ export default function Header() {
   const filePickerRef = useRef()
   const heroRef = useRef()
   const louisaRef = useRef()
+  const whatWeDoRef = useRef()
   const testimonialRef = useRef()
 
   const changeBackground = () => {
@@ -57,7 +58,7 @@ export default function Header() {
                 <span>Louisa</span>
               </button>
             </Dropdown.Header>
-            <Dropdown label="What we do" placement="right">
+            <Dropdown label="About Us" placement="right">
               <Link to='/'>
                 <Dropdown.Item>ID</Dropdown.Item>
               </Link>
@@ -69,9 +70,14 @@ export default function Header() {
               </Link>
             </Dropdown>
             <Dropdown.Header>
-              <Link to='/'>
-                <span>About us</span>
-              </Link>
+              <button 
+                onClick={() => {
+                  whatWeDoRef.current.scrollIntoView({behavior: 'smooth'
+                })
+              }}
+              >
+                <span>What We Do</span>
+              </button>
             </Dropdown.Header>
             <Dropdown.Header>
               <button
@@ -145,11 +151,9 @@ export default function Header() {
               </Link>
             </Dropdown.Header>
           </Dropdown>
-          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center'>
-            <Link to='/contact' className='text-black'>
-              Contact Us
-            </Link>
-          </button>
+          <Link to='/contact'>
+            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+          </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
             onClick={() => filePickerRef.current.click()}
@@ -163,10 +167,10 @@ export default function Header() {
       <div ref={heroRef}>
         <Hero />
       </div>
-      <div className="" ref={louisaRef}>
+      <div ref={louisaRef}>
         <Louisa />
       </div>
-      <div className="min-h-screen mb-20">
+      <div className="min-h-screen mb-20" ref={whatWeDoRef}>
         <WhatWeDo />
       </div>
       <div>
@@ -178,7 +182,7 @@ export default function Header() {
       <div>
         <ComingSoon />
       </div>
-      <div className="" ref={testimonialRef}>
+      <div ref={testimonialRef}>
         <Testimonials />
       </div>
     </div>

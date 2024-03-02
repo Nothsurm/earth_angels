@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Image from '../../images/house-image.jpg'
 import { MdEmail } from "react-icons/md";
 
@@ -22,7 +23,9 @@ export default function WhatWeDo3() {
             <p className='mt-14 leading-relaxed'>We champion modern methods of manufacture and build as it offers a significant and measurable sustainable approach.<br></br><br></br>
 
             Our buildings are precision manufactured and are quick to be assembled onsite, reducing our environmental impact and any potential operational impact on our clients’ business.</p>
-            <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-14'>Contact Us<MdEmail /></button>
+            <Link to='/contact'>
+                <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-20'>Contact Us<MdEmail /></button>
+            </Link>
         </div>
         <div className="flex-1">
             <img src={Image} alt="image" className='h-64 w-80 mx-auto rounded-md shadow-lg hover:scale-105 transition duration-300'/>
