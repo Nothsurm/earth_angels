@@ -177,7 +177,7 @@ export default function Header() {
       <div className="" ref={louisaRef}>
         <Louisa />
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-screen mb-20">
         <WhatWeDo />
       </div>
       <div>
@@ -189,7 +189,7 @@ export default function Header() {
       <div>
         <ComingSoon />
       </div>
-      <div className="testimonials min-h-screen" ref={testimonialRef}>
+      <div className="" ref={testimonialRef}>
         <Testimonials />
       </div>
     </div>
