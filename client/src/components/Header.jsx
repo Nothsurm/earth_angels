@@ -32,7 +32,7 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
           <Dropdown.Header>
-            <Link to='/louisa'>
+            <Link to='/'>
               <span>Louisa</span>
             </Link>
           </Dropdown.Header>
@@ -63,24 +63,9 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
         </Dropdown>
-        <Dropdown
-          arrowIcon={true}
-          inline
-          label = {
-            <span className='hover:opacity-80'>I.D</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Link here</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Another Link</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
+        <Link to='/design' className='hover:opacity-80'>
+          Design
+        </Link>
         <Dropdown
           arrowIcon={true}
           inline
@@ -140,7 +125,7 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
         </Dropdown>
-        <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-14'>Contact Us</button>
+        <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-white'>Contact Us</button>
         <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
         <button 
           onClick={() => filePickerRef.current.click()}

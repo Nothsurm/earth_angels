@@ -1,4 +1,4 @@
-import { Button, Dropdown } from 'flowbite-react'
+import { Dropdown } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import Hero from './DropdownComponents.jsx/Hero'
@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <div className="">
       {/* NAVBAR */}
-      <div className={ navbar ? "flex justify-around fixed z-20 text-white items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-white items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
+      <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
         <div className="hidden lg:flex gap-10">
           <Dropdown
             arrowIcon={true}
@@ -83,24 +83,9 @@ export default function Header() {
               </button>
             </Dropdown.Header>
           </Dropdown>
-          <Dropdown
-            arrowIcon={true}
-            inline
-            label = {
-              <span className='hover:opacity-80'>I.D</span>
-            }
-          >
-            <Dropdown.Header>
-              <Link to='/'>
-                <span>Link here</span>
-              </Link>
-            </Dropdown.Header>
-            <Dropdown.Header>
-              <Link to='/'>
-                <span>Another Link</span>
-              </Link>
-            </Dropdown.Header>
-          </Dropdown>
+          <Link to='/design' className='hover:opacity-80'>
+            Design
+          </Link>
           <Dropdown
             arrowIcon={true}
             inline
