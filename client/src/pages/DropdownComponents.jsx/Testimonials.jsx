@@ -36,7 +36,7 @@ export default function Testimonials() {
   return (
     <div className='mt-32'>
       <div className='flex justify-center flex-col mt-20 relative'>
-        <h1 className='text-4xl font-bold mx-auto mb-10'>What our clients say...
+        <h1 className='text-4xl font-bold mx-auto mb-10 uppercase'>What our clients say...
         <hr
             style={{
             background: 'orange',

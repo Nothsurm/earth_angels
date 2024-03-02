@@ -19,50 +19,9 @@ export default function Header() {
   return (
     <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center bg-zinc-700 h-48 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex gap-10">
-        <Dropdown
-          arrowIcon={true}
-          inline
-          label={
-            <span className='hover:opacity-80'>Home</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Home</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Louisa</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown label="What we do" placement="right">
-            <Link to='/'>
-              <Dropdown.Item>ID</Dropdown.Item>
-            </Link>
-            <Link to='/'>
-              <Dropdown.Item>V</Dropdown.Item>
-            </Link>
-            <Link to='/'>
-              <Dropdown.Item>RTP</Dropdown.Item>
-            </Link>
-          </Dropdown>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>About us</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Testimonials</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Footer</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
+        <Link to='/' className='hover:opacity-80'>
+          <span>Home</span>
+        </Link>
         <Link to='/design' className='hover:opacity-80'>
           Design
         </Link>
@@ -125,7 +84,11 @@ export default function Header() {
             </Link>
           </Dropdown.Header>
         </Dropdown>
-        <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-white'>Contact Us</button>
+        <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>
+          <Link to='/contact'>
+            Contact Us
+          </Link>
+        </button>
         <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
         <button 
           onClick={() => filePickerRef.current.click()}

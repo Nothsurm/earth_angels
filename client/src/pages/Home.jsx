@@ -145,7 +145,11 @@ export default function Header() {
               </Link>
             </Dropdown.Header>
           </Dropdown>
-          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center'>Contact Us</button>
+          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center'>
+            <Link to='/contact' className='text-black'>
+              Contact Us
+            </Link>
+          </button>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
             onClick={() => filePickerRef.current.click()}
