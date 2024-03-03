@@ -19,8 +19,8 @@ export default function WhatWeDo() {
   })
 
   return (
-    <div className='relative animate'>
-      <h1 className='flex justify-center mt-20 text-4xl font-bold'>WHAT WE DO...
+    <div className='relative'>
+      <h1 className='flex justify-center text-4xl font-bold mt-20'>WHAT WE DO...
         <hr
             style={{
             background: 'orange',

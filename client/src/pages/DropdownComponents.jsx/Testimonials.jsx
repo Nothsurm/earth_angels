@@ -51,7 +51,7 @@ export default function Testimonials() {
             }}
           />
         </h1>
-        <div className="h-[32rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="h-[32rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <MovingCards
             items={testimonials}
             direction="right"

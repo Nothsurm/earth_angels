@@ -11,7 +11,7 @@ export default function Contact() {
                 <h1 className='text-6xl font-bold text-center mt-20 text-white'>CONTACT US</h1>
             </div>
         </Parallax>
-        <div className="flex bg-neutral-200 text-stone-700">
+        <div className="flex text-stone-700">
             <div className="flex flex-row max-w-6xl gap-20 mx-auto mt-20">
                 <div className="flex-1">
                     <h1 className='font-bold text-3xl'>WE'RE READY, LET'S TALK.</h1>
