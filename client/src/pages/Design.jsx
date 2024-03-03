@@ -2,6 +2,7 @@ import Image from '../images/house-image.jpg'
 import { Parallax } from 'react-parallax'
 
 export default function Design() {
+
   return (
     <div>
         <Parallax blur={2} strength={600} bgImage={Image}>

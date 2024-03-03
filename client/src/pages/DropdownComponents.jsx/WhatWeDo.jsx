@@ -3,9 +3,24 @@ import { FaArrowRight } from "react-icons/fa";
 import { CardBody, CardContainer, CardItem } from "../../components/3dCard";
 
 export default function WhatWeDo() {
+
+  const animateSections = document.querySelectorAll('.animate')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('show', entry.isIntersecting)
+    })
+  }, {
+      rootMargin: '-50px',
+  })
+
+  animateSections.forEach(section => {
+      observer.observe(section)
+  })
+
   return (
-    <div className='relative'>
-        <h1 className='flex justify-center mt-20 text-4xl font-bold'>WHAT WE DO...
+    <div className='relative animate'>
+      <h1 className='flex justify-center mt-20 text-4xl font-bold'>WHAT WE DO...
         <hr
             style={{
             background: 'orange',
@@ -14,7 +29,7 @@ export default function WhatWeDo() {
             height: '2px',
             width: '80px',
             position: 'absolute',
-            top: '10%',
+            top: '8%',
             left: '50%',
             transform: 'translate(-50%, -50%)'
             }}
@@ -59,8 +74,6 @@ export default function WhatWeDo() {
                 <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>Learn More<FaArrowRight /></button>
             </div>
         </div>
-        {/*<img src={Image} alt="image" className='rounded-lg shadow-lg'/>*/}
     </div>
-
   )
 }

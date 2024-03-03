@@ -3,8 +3,23 @@ import Image from '../../images/house-image.jpg'
 import { MdEmail } from "react-icons/md";
 
 export default function WhatWeDo3() {
+
+    const animateSections = document.querySelectorAll('.animate')
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          entry.target.classList.toggle('show', entry.isIntersecting)
+      })
+    }, {
+        rootMargin: '-50px',
+    })
+  
+    animateSections.forEach(section => {
+        observer.observe(section)
+    })
+
   return (
-    <div className='flex flex-row justify-between max-w-6xl mx-auto mt-32'>
+    <div className='flex flex-row justify-between max-w-6xl mx-auto mt-32 animate'>
         <div className="flex-1 flex-col relative text-stone-700">
             <h1 className='font-bold text-3xl'>WE SUPPLY ULTRA-SUSTAINABLE ACCOMMODATION SOLUTIONS
             <hr
