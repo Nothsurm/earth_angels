@@ -1,9 +1,24 @@
 import Image from '../../images/house-image.jpg'
 
 export default function Louisa() {
+
+  const animateSections = document.querySelectorAll('.animate')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('show', entry.isIntersecting)
+    })
+  }, {
+      rootMargin: '-50px',
+  })
+
+  animateSections.forEach(section => {
+      observer.observe(section)
+  })
+
   return (
     <div className='h-fit flex justify-center bg-zinc-800 text-stone-300'>
-      <div className="flex justify-between gap-20 max-w-6xl mb-10">
+      <div className="flex justify-between gap-20 max-w-6xl mb-10 animate">
         <div className="flex-1 relative mt-12">
           <h1 className='font-semibold text-xl text-center'>"We offer a modern sustainable design approach, incorporating 'wellness architecture' principles and state-of-the-art methods of building.<br></br><br></br>
 
