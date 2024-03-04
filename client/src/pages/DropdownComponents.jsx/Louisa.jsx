@@ -17,10 +17,10 @@ export default function Louisa() {
   })
 
   return (
-    <div className='h-fit flex justify-center bg-zinc-800 text-stone-300'>
-      <div className="flex justify-between gap-20 max-w-6xl mb-10 animate">
-        <div className="flex-1 relative mt-12">
-          <h1 className='font-semibold text-xl text-center'>"We offer a modern sustainable design approach, incorporating 'wellness architecture' principles and state-of-the-art methods of building.<br></br><br></br>
+    <div className='h-fit flex flex-wrap justify-center bg-zinc-800 text-stone-300'>
+      <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
+        <div className="flex-1 mt-12">
+          <h1 className='font-semibold text-xl text-center relative'>"We offer a modern sustainable design approach, incorporating 'wellness architecture' principles and state-of-the-art methods of building.<br></br><br></br>
 
           Using this approach we create living spaces that prioritise environmental stewardship, health and comfort through passive design, non-toxic and recycled materials and energy efficiency."
           <hr
@@ -31,12 +31,13 @@ export default function Louisa() {
             height: '2px',
             width: '60px',
             position: 'absolute',
-            top: '70%',
+            top: '100%',
             left: '50%',
             transform: 'translate(-50%, -50%)'
             }}
+            className='mt-6'
           /></h1>
-          <div className="flex justify-center mt-10 items-center gap-10">
+          <div className="flex flex-wrap justify-center mt-10 items-center gap-10">
             <img src="" alt="img-here" className='w-28 h-28 rounded-full border'/>
             <h1 className='font-semibold text-xl text-center'>Louisa Payne - Founder & CEO</h1>
           </div>

@@ -19,8 +19,8 @@ export default function WhatWeDo() {
   })
 
   return (
-    <div className='relative animate'>
-      <h1 className='flex justify-center text-4xl font-bold mt-20'>WHAT WE DO...
+    <div className='animate'>
+      <h1 className='flex justify-center text-4xl font-bold mt-20 relative'>WHAT WE DO...
         <hr
             style={{
             background: 'orange',
@@ -29,13 +29,14 @@ export default function WhatWeDo() {
             height: '2px',
             width: '80px',
             position: 'absolute',
-            top: '8%',
+            top: '100%',
             left: '50%',
             transform: 'translate(-50%, -50%)'
             }}
+            className='mt-10'
           /></h1>
-        <div className="flex justify-between gap-10 max-w-6xl mt-24 text-center mx-auto">
-            <div className="flex-1 flex-col text-stone-700">
+        <div className="flex flex-wrap flex-col md:flex-row justify-between gap-10 max-w-6xl mt-24 text-center mx-auto">
+            <div className="flex-1 flex-col text-stone-700 mr-2 ml-2 sm:ml-0 sm:mr-0">
               <CardContainer className="inter-var">
                 <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl border">
                   <CardItem translateZ="100" className="w-full">
@@ -55,7 +56,7 @@ export default function WhatWeDo() {
               We offer everything from Interior Design Concepts, Ultra Sustainable Build Solutions & full Sourcing of everything required.</p>
               <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>Learn More<FaArrowRight /></button>
             </div>
-            <div className="flex-1 text-stone-700">
+            <div className="flex-1 flex-col text-stone-700 mr-2 ml-2 sm:ml-0 sm:mr-0">
               <CardContainer className="inter-var">
                   <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl border">
                     <CardItem translateZ="100" className="w-full">

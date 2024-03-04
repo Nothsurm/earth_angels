@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 export default function FooterSection() {
   return (
     <footer className='w-full bg-zinc-700 text-stone-300'>
-      <div className="flex justify-around">
+      <div className="flex flex-wrap justify-around">
         <div className="mt-4">
           <h1>Earth Angels logo goes here</h1>
         </div>
-        <div className="flex flex-row gap-20 mt-4">
+        <div className="flex flex-row flex-wrap gap-20 mt-4">
           <div className="flex flex-col gap-2">
             <h1 className='font-bold text-lg'>About</h1>
             <span>
@@ -52,7 +52,7 @@ export default function FooterSection() {
         </div>
       </div>
       <Footer.Divider />
-      <div className="flex justify-around max-w-3xl h-10 mx-auto items-center">
+      <div className="flex flex-wrap justify-around max-w-3xl h-10 mx-auto items-center">
         <div className="">
           <Footer.Copyright href="#" by="Earth Angels™" year={2024} className='text-stone-300'/>
         </div>

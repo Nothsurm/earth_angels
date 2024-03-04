@@ -12,8 +12,8 @@ export default function Contact() {
             </div>
         </Parallax>
         <div className="flex text-stone-700">
-            <div className="flex flex-row max-w-6xl gap-20 mx-auto mt-20">
-                <div className="flex-1">
+            <div className="flex flex-col md:flex-row max-w-6xl gap-20 mx-auto mt-20">
+                <div className="flex-1  mr-2 ml-2 sm:ml-0 sm:mr-0">
                     <h1 className='font-bold text-3xl'>WE'RE READY, LET'S TALK.</h1>
                     <form className='mt-14 flex flex-col gap-4'>
                         <div>
@@ -34,8 +34,8 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-                <div className="flex-1 flex flex-col gap-4 relative">
-                    <h1 className='font-bold text-3xl'>CONTACT INFO
+                <div className="flex-1 flex flex-col gap-4 mr-2 ml-2 sm:ml-0 sm:mr-0">
+                    <h1 className='font-bold text-3xl relative'>CONTACT INFO
                     <hr
                         style={{
                         background: 'orange',
@@ -44,10 +44,11 @@ export default function Contact() {
                         height: '2px',
                         width: '60px',
                         position: 'absolute',
-                        top: '14%',
+                        top: '100%',
                         left: '7%',
                         transform: 'translate(-50%, -50%)'
                         }}
+                        className='mt-6'
                     /></h1>
                     <h2 className='font-bold text-xl mt-10'>Address</h2>
                     <p>FemalEvolution Unipessoal Lda, UALG Gambelas PAV B1, 8005-139, FARO</p>
@@ -61,7 +62,7 @@ export default function Contact() {
         </div>
         <div className="flex justify-center bg-neutral-200">
             <div className="mt-20">
-                <iframe width="1300" height="600" src="https://maps.google.com/maps?width=1000&amp;height=600&amp;hl=en&amp;coord=37.106581848850965, -8.140168604272148&amp;q=UALG%Gambelas%8005-139%Faro&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br />
+                <iframe width="1300" height="600" src="https://maps.google.com/maps?width=1000&amp;height=600&amp;hl=en&amp;coord=37.106581848850965, -8.140168604272148&amp;q=UALG%Gambelas%8005-139%Faro&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" className='w-[17rem] h-[17rem] sm:w-[30rem] sm:h-[28rem] md:w-[50rem] md:h-[40rem] lg:w-[60rem] xl:w-[80rem]'></iframe><br />
             </div>
         </div>
     </div>

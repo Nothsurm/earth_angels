@@ -8,6 +8,7 @@ import WhatWeDo3 from './DropdownComponents.jsx/WhatWeDo3'
 import ComingSoon from './DropdownComponents.jsx/ComingSoon'
 
 export default function Home() {
+
   const [navbar, setNavbar] = useState(false)
 
   const changeBackground = () => {

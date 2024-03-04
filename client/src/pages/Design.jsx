@@ -12,7 +12,7 @@ export default function Design() {
         </Parallax>
         <div className="bg-zinc-600 w-full flex flex-col justify-center text-center text-white">
             <div className="max-w-3xl mx-auto mt-20 mb-20">
-                <h1 className='text-4xl font-bold '>DESIGN IS PERSONAL
+                <h1 className='text-4xl font-bold relative'>DESIGN IS PERSONAL
                 <hr
                     style={{
                     background: 'orange',
@@ -21,18 +21,19 @@ export default function Design() {
                     height: '2px',
                     width: '80px',
                     position: 'absolute',
-                    top: '79%',
+                    top: '100%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)'
                     }}
+                    className='mt-6'
                 /></h1>
-                <p className='mt-14'>Whether for a Brand or for an Individual, Design Style IS personal. We specialise in helping you develop and express this personality, visualising how to translates this in reality and making it happen within your budget.<br></br><br></br>
+                <p className='mt-14 mr-2 ml-2 sm:ml-0 sm:mr-0'>Whether for a Brand or for an Individual, Design Style IS personal. We specialise in helping you develop and express this personality, visualising how to translates this in reality and making it happen within your budget.<br></br><br></br>
 
                 We believe in Sustainability in Action and we will help you make the right choices for all our futures.</p>
             </div>
         </div>
         <div className="min-h-screen bg-neutral-100 text-stone-700">
-            <div className="flex flex-row justify-center gap-10 max-w-6xl mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center gap-10 max-w-6xl mx-auto">
                 <div className="max-w-lg text-center">
                     <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Mood Boards</h1>
@@ -44,7 +45,7 @@ export default function Design() {
                     <p className='mt-4'>CGI's (Computer Generated Images) enables us to visualise the actual look and feel of a project, enabling sign off and early commercial promotion & marketing activities</p>
                 </div>
             </div>
-            <div className="flex flex-row justify-center gap-10 max-w-6xl mx-auto">
+            <div className="flex flex-col sm:flex-row justify-center gap-10 max-w-6xl mx-auto">
                 <div className="max-w-lg text-center">
                     <img src={Image} alt="" className='rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Detailed Plans</h1>
@@ -57,10 +58,10 @@ export default function Design() {
                 </div>
             </div>
         </div>
-        <div className="bg-zinc-600 w-full h-[700px] text-stone-200">
-            <div className="max-w-6xl mx-auto flex flex-row gap-10">
-                <div className="flex-1 mt-20 relative leading-relaxed">
-                    <h1 className='font-bold text-2xl'>Design is in our DNA
+        <div className="bg-zinc-600 w-full h-fit text-stone-200">
+            <div className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-10">
+                <div className="flex-1 mt-20 mb-0 sm:mb-20 leading-relaxed mr-2 ml-2 sm:ml-0 sm:mr-0">
+                    <h1 className='font-bold text-2xl relative'>Design is in our DNA
                         <hr
                         style={{
                         background: 'orange',
@@ -69,10 +70,11 @@ export default function Design() {
                         height: '2px',
                         width: '60px',
                         position: 'absolute',
-                        top: '12%',
+                        top: '100%',
                         left: '6%',
                         transform: 'translate(-50%, -50%)'
                         }}
+                        className='mt-6'
                     /></h1>
                     <p className='mt-14'>The principal of Earth Angels, Louisa is a commercially astute Design professional.<br></br><br></br>
 
@@ -92,8 +94,8 @@ export default function Design() {
                         </div>
                     </div>
                 </div>
-                <div className="flex-1 mt-20 relative leading-relaxed">
-                    <h1 className='font-bold text-2xl'>Dedicated to Sustainable Solutions
+                <div className="flex-1 mt-20 mb-20 leading-relaxed mr-2 ml-2 sm:ml-0 sm:mr-0">
+                    <h1 className='font-bold text-2xl relative'>Dedicated to Sustainable Solutions
                         <hr
                             style={{
                             background: 'orange',
@@ -102,10 +104,11 @@ export default function Design() {
                             height: '2px',
                             width: '60px',
                             position: 'absolute',
-                            top: '12%',
+                            top: '100%',
                             left: '6%',
                             transform: 'translate(-50%, -50%)'
                             }}
+                            className='mt-6'
                         />
                     </h1>
                     <p className='mt-14'>We are passionate about environmentally & sustainable modern methods of construction and the emergence of ground breaking new materials and products in this space.<br></br><br></br>
@@ -132,7 +135,7 @@ export default function Design() {
         </div>
         <div className="bg-white w-full h-[600px] flex justify-center">
             <iframe 
-                width="900" 
+                width="700" 
                 height="600"
                 src="https://www.youtube.com/embed/7BGNAGahig8"
             >
