@@ -27,9 +27,33 @@ export default function Header() {
     <>
     <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex gap-10">
-        <Link to='/' className='hover:opacity-80'>
-          Home
-        </Link>
+        <Dropdown 
+          arrowIcon={true}
+          inline
+          label = {
+            <span className='hover:opacity-80'>Home</span>
+          }
+        >
+          <Dropdown.Header>
+            <Link to='/'>
+              <span className='hover:opacity-80'>Home</span>
+            </Link>
+          </Dropdown.Header>
+          <Dropdown.Header>
+            <Link to='/louisa'>
+              <span className='hover:opacity-80'>Louisa</span>
+            </Link>
+          </Dropdown.Header>
+          <Dropdown label="What we do" placement="right">
+            <Dropdown.Item>VIS</Dropdown.Item>
+            <Dropdown.Item>RTP</Dropdown.Item>
+          </Dropdown>
+          <Dropdown.Header>
+            <Link to='/testimonials'>
+              <span className='hover:opacity-80'>Testimonials</span>
+            </Link>
+          </Dropdown.Header>
+        </Dropdown>
         <Link to='/design' className='hover:opacity-80'>
           Design
         </Link>
