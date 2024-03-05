@@ -9,6 +9,7 @@ import WhatWeDo4 from './DropdownComponents.jsx/WhatWeDo4'
 import { Dropdown, DropdownHeader } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
+import KnowMore from './DropdownComponents.jsx/KnowMore'
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
@@ -184,6 +185,9 @@ export default function Home() {
       </div>
       <div>
         <WhatWeDo4 />
+      </div>
+      <div>
+        <KnowMore />
       </div>
       <div ref={testimonials}>
         <Testimonials />
