@@ -81,13 +81,13 @@ export default function Header() {
           <Link to='/design' className='hover:opacity-80' onClick={toggleNavbar}>
             Design
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>VIS</span>
+          <Link to='/visualisation' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Visualisations</span>
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>RTP</span>
+          <Link to='/tourism' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Tourism</span>
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
+          <Link to='/about-us' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>

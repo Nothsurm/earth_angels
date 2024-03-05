@@ -10,6 +10,7 @@ import { Dropdown, DropdownHeader } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import KnowMore from './DropdownComponents.jsx/KnowMore'
+import { IoMdClose } from "react-icons/io";
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
@@ -144,13 +145,13 @@ export default function Home() {
           <Link to='/design' className='hover:opacity-80' onClick={toggleNavbar}>
             Design
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>VIS</span>
+          <Link to='/visualisation' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Visualisations</span>
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>RTP</span>
+          <Link to='/tourism' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Tourism</span>
           </Link>
-          <Link to='/' onClick={toggleNavbar}>
+          <Link to='/about-us' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>
