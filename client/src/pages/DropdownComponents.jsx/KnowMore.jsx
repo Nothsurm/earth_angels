@@ -6,8 +6,8 @@ import { CardBody, CardContainer, CardItem } from "../../components/3dCard";
 export default function KnowMore() {
   return (
     <div className='h-fit flex flex-wrap justify-center bg-zinc-800 text-stone-300'>
-        <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
-            <div className="flex-1 mt-20 mb-20">
+        <div className="flex flex-col lg:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
+            <div className="flex-1 mt-20 lg:mb-20">
                 <h1 className='text-4xl text-center font-bold mx-auto mb-10 uppercase relative'>WANT TO KNOW MORE ABOUT US?
                 <hr
                     style={{
@@ -32,7 +32,7 @@ export default function KnowMore() {
                 </Link>
                 </div>
             </div>
-            <div className="flex-1 flex-col gap-10 mt-28">
+            <div className="flex-1 flex-col gap-10 lg:mt-28">
                 <CardContainer className="inter-var">
                     <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto sm:h-[20rem] rounded-xl border shadow-xl">
                     <CardItem translateZ="100" className="w-full">
