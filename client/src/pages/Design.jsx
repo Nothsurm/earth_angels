@@ -1,3 +1,4 @@
+import Header from '../components/Header'
 import Image from '../images/house-image.jpg'
 import { Parallax } from 'react-parallax'
 
@@ -5,6 +6,7 @@ export default function Design() {
 
   return (
     <div>
+        <Header />
         <Parallax blur={2} strength={600} bgImage={Image}>
             <div className="w-full h-[600px] flex justify-center items-center">
                 <h1 className='text-6xl font-bold text-center mt-20 text-white'>DESIGN SERVICES</h1>

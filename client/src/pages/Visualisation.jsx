@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from '../components/Header'
 
 export default function Visualisation() {
   return (
-    <div>Visualisation</div>
+    <div>
+        <Header />
+    </div>
   )
 }

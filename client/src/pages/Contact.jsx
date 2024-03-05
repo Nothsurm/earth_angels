@@ -2,10 +2,12 @@ import Image from '../images/house-image.jpg'
 import { Parallax } from 'react-parallax'
 import { Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 import { MdPerson, MdEmail } from "react-icons/md";
+import Header from '../components/Header';
 
 export default function Contact() {
   return (
     <div>
+        <Header />
         <Parallax blur={2} strength={600} bgImage={Image}>
             <div className="w-full h-[600px] flex justify-center items-center">
                 <h1 className='text-6xl font-bold text-center mt-20 text-white'>CONTACT US</h1>

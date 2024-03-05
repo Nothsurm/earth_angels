@@ -1,4 +1,3 @@
-import { Dropdown } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -27,54 +26,15 @@ export default function Header() {
     <>
     <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex gap-10">
-        <Dropdown 
-          arrowIcon={true}
-          inline
-          label = {
-            <span className='hover:opacity-80'>Home</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span className='hover:opacity-80'>Home</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/louisa'>
-              <span className='hover:opacity-80'>Louisa</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown label="What we do" placement="right">
-            <Dropdown.Item>VIS</Dropdown.Item>
-            <Dropdown.Item>RTP</Dropdown.Item>
-          </Dropdown>
-          <Dropdown.Header>
-            <Link to='/testimonials'>
-              <span className='hover:opacity-80'>Testimonials</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
+        <Link to='/' className='hover:opacity-80'>
+          Home
+        </Link>
         <Link to='/design' className='hover:opacity-80'>
           Design
         </Link>
-        <Dropdown
-          arrowIcon={true}
-          inline
-          label = {
-            <span className='hover:opacity-80'>VIS</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Link here</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Another Link</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
+        <Link to='/visualisation' className='hover:opacity-80'>
+          Visualisations
+        </Link>
       </div>
       {/* MOBILE */}
       <div className="">
@@ -87,44 +47,14 @@ export default function Header() {
         {!isOpen ? <GiHamburgerMenu /> : <></>}
       </button>
       {/**/}
-      <div className="hidden lg:flex gap-10">
-        <Dropdown
-          arrowIcon={false}
-          inline
-          label = {
-            <span className='hover:opacity-80'>RTP</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Link here</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Another Link</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
-        <Dropdown
-          arrowIcon={false}
-          inline
-          label = {
-            <span className='hover:opacity-80'>About us</span>
-          }
-        >
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Link here</span>
-            </Link>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/'>
-              <span>Another Link</span>
-            </Link>
-          </Dropdown.Header>
-        </Dropdown>
-        <Link to='/contact'>
+      <div className="hidden lg:flex items-center gap-10">
+        <Link to='/tourism' className='hover:opacity-80'>
+          Tourism
+        </Link>
+        <Link to='/about-us' className='hover:opacity-80'>
+          About Us
+        </Link>
+        <Link to='/contact' className='hover:opacity-80'>
           <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
         </Link>
         <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
