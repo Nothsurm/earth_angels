@@ -7,7 +7,9 @@ export default function FooterSection() {
     <footer className='w-full bg-zinc-700 text-stone-300'>
       <div className="flex flex-wrap justify-around mr-2 ml-2 sm:ml-0 sm:mr-0">
         <div className="mt-4">
-          <img src={Image} alt="" className='w-[200px]'/>
+          <Link to='/'>
+            <img src={Image} alt="" className='w-[200px]'/>
+          </Link>
         </div>
         <div className="flex flex-row flex-wrap gap-20 items-center">
           <div className="flex flex-col gap-8">

@@ -39,7 +39,9 @@ export default function Header() {
       </div>
       {/* MOBILE */}
       <div className="ml-0 xl:ml-52">
-        <img src={Image} alt="" className='w-[200px]'/>
+        <Link to='/'>
+          <img src={Image} alt="" className='w-[200px]'/>
+        </Link>
       </div>
       <button 
         className="text-3xl flex lg:hidden"
