@@ -7,7 +7,7 @@ import Home from './pages/Home.jsx'
 import Design from './pages/Design.jsx'
 import Contact from './pages/Contact.jsx'
 import Visualisation from './pages/Visualisation.jsx'
-import Tourism from './pages/Tourism.jsx'
+import CommercialProjects from './pages/CommercialProjects.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       <Route path='/design' element={<Design />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/visualisation' element={<Visualisation />}></Route>
-      <Route path='/tourism' element={<Tourism />}></Route>
+      <Route path='/commercial-projects' element={<CommercialProjects />}></Route>
       <Route path='/about-us' element={<AboutUs />}></Route>
       <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
       <Route path='/terms-conditions' element={<TermsAndConditions />}></Route>

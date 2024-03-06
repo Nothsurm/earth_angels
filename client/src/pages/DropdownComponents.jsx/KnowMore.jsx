@@ -34,7 +34,7 @@ export default function KnowMore() {
             </div>
             <div className="flex-1 flex-col gap-10 lg:mt-28">
                 <CardContainer className="inter-var">
-                    <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto sm:h-[20rem] rounded-xl border shadow-xl">
+                    <CardBody className="bg-gray-50 relative w-auto sm:w-[30rem] h-auto sm:h-[20rem] rounded-xl shadow-xl">
                     <CardItem translateZ="100" className="w-full">
                         <img
                         src={Image}

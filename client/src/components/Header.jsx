@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import Image from '../images/earth-angels-logo.png'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
@@ -37,8 +38,8 @@ export default function Header() {
         </Link>
       </div>
       {/* MOBILE */}
-      <div className="">
-        <span>Earth Angels Logo goes here</span>
+      <div className="ml-0 xl:ml-52">
+        <img src={Image} alt="" className='w-[200px]'/>
       </div>
       <button 
         className="text-3xl flex lg:hidden"
@@ -48,8 +49,8 @@ export default function Header() {
       </button>
       {/**/}
       <div className="hidden lg:flex items-center gap-10">
-        <Link to='/tourism' className='hover:opacity-80'>
-          Tourism
+        <Link to='/commercial-projects' className='hover:opacity-80'>
+          Commercial Projects
         </Link>
         <Link to='/about-us' className='hover:opacity-80'>
           About Us
@@ -84,8 +85,8 @@ export default function Header() {
           <Link to='/visualisation' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>Visualisations</span>
           </Link>
-          <Link to='/tourism' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>Tourism</span>
+          <Link to='/commercial-projects' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Commercial Projects</span>
           </Link>
           <Link to='/about-us' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>About us</span>

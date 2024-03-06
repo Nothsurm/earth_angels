@@ -1,5 +1,5 @@
 import { Parallax } from 'react-parallax'
-import Image from '../../images/hero-image.jpeg'
+import Image from '../../images/luxury-lodge.jpeg'
 import { TypewriterEffect } from "../../components/TypeWrites";
 
 export default function Hero() {
@@ -27,8 +27,8 @@ export default function Hero() {
     },
   ];
   return (
-    <div>
-        <Parallax blur={2} strength={600} bgImage={Image}>
+    <div className=''>
+        <Parallax blur={1} strength={600} bgImage={Image} bgImageStyle={{ width: "100%", height:'100%' }}>
             <div className="min-h-screen flex justify-center items-center">
                 <h1 className='uppercase text-white text-5xl font-bold text-center mt-10 relative'><TypewriterEffect words={words} />
                 <hr

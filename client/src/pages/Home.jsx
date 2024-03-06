@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import KnowMore from './DropdownComponents.jsx/KnowMore'
 import { IoMdClose } from "react-icons/io";
+import Image from '../images/earth-angels-logo.png'
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
@@ -101,8 +102,8 @@ export default function Home() {
         </Link>
       </div>
       {/* MOBILE */}
-      <div className="">
-        <span>Earth Angels Logo goes here</span>
+      <div className="ml-0 xl:ml-52">
+        <img src={Image} alt="" className='w-[200px]'/>
       </div>
       <button 
         className="text-3xl flex lg:hidden"
@@ -112,22 +113,22 @@ export default function Home() {
       </button>
       {/**/}
       <div className="hidden lg:flex items-center gap-10">
-        <Link to='/tourism' className='hover:opacity-80'>
-          Tourism
-        </Link>
-        <Link to='/about-us' className='hover:opacity-80'>
-          About Us
-        </Link>
-        <Link to='/contact'>
-          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
-        </Link>
-        <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
-        <button 
-          onClick={() => filePickerRef.current.click()}
-          className='hover:opacity-80'
-        >
-          Brochure
-        </button>
+          <Link to='/commercial-projects' className='hover:opacity-80'>
+            Commercial Projects
+          </Link>
+          <Link to='/about-us' className='hover:opacity-80'>
+            About Us
+          </Link>
+          <Link to='/contact'>
+            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+          </Link>
+          <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
+          <button 
+            onClick={() => filePickerRef.current.click()}
+            className='hover:opacity-80'
+          >
+            Brochure
+          </button>
       </div>
     </div>
     {/* MOBILE */}
@@ -148,8 +149,8 @@ export default function Home() {
           <Link to='/visualisation' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>Visualisations</span>
           </Link>
-          <Link to='/tourism' onClick={toggleNavbar}>
-            <span className='hover:opacity-80'>Tourism</span>
+          <Link to='/commercial-projects' onClick={toggleNavbar}>
+            <span className='hover:opacity-80'>Commercial Projects</span>
           </Link>
           <Link to='/about-us' onClick={toggleNavbar}>
             <span className='hover:opacity-80'>About us</span>

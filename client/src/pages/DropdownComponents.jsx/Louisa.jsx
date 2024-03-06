@@ -22,9 +22,9 @@ export default function Louisa() {
     <div className='h-fit flex flex-wrap justify-center bg-zinc-800 text-stone-300'>
       <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
         <div className="flex-1 mt-12">
-          <h1 className='font-semibold text-xl text-center relative'>"We offer a modern sustainable design approach, incorporating "Wellness Architecture" principles and ultra efficient methods of building.<br></br><br></br>
+          <h1 className='font-semibold text-xl text-center relative'>”We are an experienced Design Agency specialising in sustainable design based on "Wellness Real Estate" principles.<br></br><br></br>
 
-          Using this approach we create living spaces that prioritise environmental stewardship, health and comfort through the principles of passive design, non-toxic and recycled materials and energy efficiency."
+          Using this approach we create living spaces that prioritise environmental stewardship and the health and comfort of residents using passive design techniques and technologies, non-toxic and sustainable materials and energy efficiency."
           <hr
             style={{
             background: 'orange',

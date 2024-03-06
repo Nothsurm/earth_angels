@@ -1,24 +1,24 @@
 import { Footer } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Image from '../images/earth-angels-logo.png'
 
 export default function FooterSection() {
   return (
     <footer className='w-full bg-zinc-700 text-stone-300'>
-      <div className="flex flex-wrap justify-around">
+      <div className="flex flex-wrap justify-around mr-2 ml-2 sm:ml-0 sm:mr-0">
         <div className="mt-4">
-          <h1>Earth Angels logo goes here</h1>
+          <img src={Image} alt="" className='w-[200px]'/>
         </div>
-        <div className="flex flex-row flex-wrap gap-20 mt-4">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-row flex-wrap gap-20 items-center">
+          <div className="flex flex-col gap-8">
             <Link to='/' className='hover:opacity-80'>
               Home
             </Link>
-            <Link to='/tourism' className='hover:opacity-80'>
-              Tourism
+            <Link to='/commercial-projects' className='hover:opacity-80'>
+              Commercial Projects
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-8">
             <Link to='/design' className='hover:opacity-80'>
               Design
             </Link>
@@ -26,7 +26,7 @@ export default function FooterSection() {
               Contact Us
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-8">
             <Link to='/visualisation' className='hover:opacity-80'>
               Visualisations
             </Link>
@@ -34,7 +34,7 @@ export default function FooterSection() {
               Brochures
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-8">
             <Link to='/privacy-policy' className='hover:opacity-80'>
               Privacy Policy
             </Link>

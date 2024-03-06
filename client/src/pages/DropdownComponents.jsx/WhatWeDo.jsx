@@ -53,9 +53,9 @@ export default function WhatWeDo() {
                 </CardBody>
               </CardContainer>
               <h2 className='font-bold text-xl animate'>Professional Design</h2>
-              <p className='leading-loose p-6 animate'>We work closely with our clients to design & deliver bespoke solutions that are unique, energy efficient, eco & sustainable and set within nature. We are focused on delivering a carefully considered luxurious experience to budget. We offer everything from Interior Design Concepts, Ultra Sustainable Build Solutions & full Sourcing of everything required.</p>
+              <p className='leading-loose p-6 animate mt-4'>We work closely with our clients to design & deliver bespoke solutions that are unique, energy efficient, eco & sustainable and set within nature. We are focused on delivering a carefully considered luxurious experience to budget. We offer everything from Interior Design Concepts, Ultra Sustainable Build Solutions & full Sourcing of everything required.</p>
               <Link to='/design' className='animate'>
-                <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>Learn More<FaArrowRight /></button>
+                <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mx-auto mt-4'>Learn More<FaArrowRight /></button>
               </Link>
             </div>
             <div className="flex-1 flex-col text-stone-700 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
@@ -72,9 +72,9 @@ export default function WhatWeDo() {
                     </CardItem>
                   </CardBody>
                 </CardContainer>
-                <h2 className='font-bold text-xl animate'>Sustainability in Action - Tourism Projects</h2>
-                <p className='leading-loose p-6 animate'>Every enterprise has unique characteristics. We tailor our support, which can include advisory services related to Tourism hospitality operational planning and standards, development of marketing and revenue management strategies, as well as assistance with every aspect of launching a new initiative that will complement existing operations and boost profits.</p>
-                <Link to='/tourism' className='animate'>
+                <h2 className='font-bold text-xl animate'>Sustainability in Action - Support for Commercial Projects</h2>
+                <p className='leading-loose p-6 animate'>Every enterprise has unique characteristics. We tailor our support, which can include; Photo-realistic visualisations and videos, the provision of a Show Suite to drive pre-build sales, advisory services related to Tourism hospitality operational planning and standards, development of marketing and revenue management strategies, as well as assistance with every aspect of launching a new initiative that will complement existing operations and boost profits.</p>
+                <Link to='/commercial-projects' className='animate'>
                   <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>Learn More<FaArrowRight /></button>
                 </Link>
             </div>
