@@ -22,7 +22,7 @@ export default function WhatWeDo2() {
   return (
     <div className='flex justify-center'>
         <Parallax blur={1} strength={600} bgImage={Image} className='w-full'>
-            <div className="h-fit sm:h-96 max-w-xl mx-auto lg:mr-auto lg:ml-96 mt-20 mb-10 text-stone-100 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
+            <div className="h-fit bg-zinc-700 bg-opacity-75 p-2 rounded-md sm:h-96 max-w-xl mx-auto lg:mr-auto lg:ml-96 mt-20 mb-20 text-stone-100 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
                 <h1 className='text-3xl sm:text-4xl font-bold mx-auto relative uppercase'>Visualisations of Designs, Re-imagined
                 <hr
                     style={{
