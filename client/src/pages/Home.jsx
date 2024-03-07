@@ -141,7 +141,7 @@ export default function Home() {
             <IoMdClose />
           </button>
         </div>
-        <div className="flex flex-col gap-14 mt-20 text-center text-3xl">
+        <div className="flex flex-col justify-center gap-14 mt-20 text-center text-3xl">
           <Link to='/' className='hover:opacity-80' onClick={toggleNavbar}>
             <span>Home</span>
           </Link>
@@ -158,7 +158,7 @@ export default function Home() {
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>
-            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 text-black'>Contact Us</button>
           </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 

@@ -5,7 +5,7 @@ import Image from '../images/earth-angels-logo.png'
 export default function FooterSection() {
   return (
     <footer className='w-full bg-zinc-700 text-stone-300'>
-      <div className="flex flex-wrap justify-around mr-2 ml-2 sm:ml-0 sm:mr-0">
+      <div className="flex flex-wrap mx-auto justify-around mr-2 ml-2 sm:ml-0 sm:mr-0">
         <div className="mt-4">
           <Link to='/'>
             <img src={Image} alt="" className='w-[200px]'/>

@@ -21,7 +21,7 @@ export default function ComingSoon() {
 
   return (
     <div className='mt-20 text-stone-100'>
-        <Parallax blur={2} strength={600} bgImage={Image}>
+        <Parallax blur={1} strength={600} bgImage={Image}>
             <div className="h-fit flex flex-col mx-auto lg:ml-auto lg:mr-96 mt-32 mb-32 max-w-xl mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
                 <h1 className='text-4xl font-bold relative uppercase'>HELP WITH YOUR FINANCE STRATEGY
                 <hr

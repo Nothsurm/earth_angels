@@ -94,7 +94,7 @@ export default function Header() {
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>
-            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 text-black'>Contact Us</button>
           </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
