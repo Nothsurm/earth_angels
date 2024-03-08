@@ -23,27 +23,15 @@ export default function WhatWeDo3() {
   return (
     <div className='flex flex-col md:flex-row justify-between max-w-6xl mx-auto animate gap-10'>
         <div className="flex-1 flex-col text-stone-700 mt-20">
-            <h1 className='font-bold text-3xl relative'>WE DESIGN & BUILD USING ULTRA-SUSTAINABLE SOLUTIONS
-            <hr
-                style={{
-                background: 'orange',
-                color: 'orange',
-                borderColor: 'orange',
-                height: '2px',
-                width: '60px',
-                position: 'absolute',
-                top: '100%',
-                left: '6%',
-                transform: 'translate(-50%, -50%)'
-                }}
-                className='mt-6'
-            /></h1>
+            <h1 className='font-bold text-3xl'>WE DESIGN & BUILD USING ULTRA-SUSTAINABLE SOLUTIONS</h1>
             <p className='mt-14 leading-relaxed'>We champion modern methods of manufacture and build. This technique is the Future, a significant and measurable sustainable approach.<br></br><br></br>
 
             We can rehabilitate buildings, build new or even combine the two. The core structure is precision manufactured and is quick to be assembled onsite, reducing their environmental & operational impact.</p>
-            <Link to='/commercial-projects'>
-                <button className='uppercase bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center gap-2 mt-20'>Learn More<FaArrowRight /></button>
-            </Link>
+            <button className='mt-20'>
+                <Link to='/commercial-projects' className='uppercase bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2'>
+                    Learn More<FaArrowRight />
+                </Link>
+            </button>
         </div>
         <div className="flex-1 mt-0 md:mt-10">
             <CardContainer className="inter-var">

@@ -36,22 +36,7 @@ export default function Testimonials() {
   return (
     <div className='mt-32'>
       <div className='flex justify-center flex-col mt-20'>
-        <h1 className='text-4xl font-bold mx-auto mb-10 uppercase relative'>What our clients say...
-        <hr
-            style={{
-            background: 'orange',
-            color: 'orange',
-            borderColor: 'orange',
-            height: '2px',
-            width: '80px',
-            position: 'absolute',
-            top: '100%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
-            }}
-            className="mt-10"
-          />
-        </h1>
+        <h1 className='text-4xl font-bold mx-auto mb-10 uppercase'>What our clients say...</h1>
         <div className="h-[32rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <MovingCards
             items={testimonials}

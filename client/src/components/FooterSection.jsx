@@ -16,8 +16,16 @@ export default function FooterSection() {
             <Link to='/' className='hover:opacity-80'>
               Home
             </Link>
+            <Link to='/about-us' className='hover:opacity-80'>
+              About Us
+            </Link>
+          </div>
+          <div className="flex flex-col gap-8">
             <Link to='/commercial-projects' className='hover:opacity-80'>
               Commercial Projects
+            </Link>
+            <Link to='/sustainability' className='hover:opacity-80'>
+              Sustainability
             </Link>
           </div>
           <div className="flex flex-col gap-8">

@@ -3,7 +3,7 @@ import Hero from './DropdownComponents.jsx/Hero'
 import Louisa from './DropdownComponents.jsx/Louisa'
 import WhatWeDo from './DropdownComponents.jsx/WhatWeDo'
 import Testimonials from './DropdownComponents.jsx/Testimonials'
-import WhatWeDo2 from './DropdownComponents.jsx/WhatWeDo2'
+import ParallaxImage from './DropdownComponents.jsx/Parallax'
 import WhatWeDo3 from './DropdownComponents.jsx/WhatWeDo3'
 import WhatWeDo4 from './DropdownComponents.jsx/WhatWeDo4'
 import { Dropdown, DropdownHeader } from 'flowbite-react'
@@ -12,6 +12,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import KnowMore from './DropdownComponents.jsx/KnowMore'
 import { IoMdClose } from "react-icons/io";
 import Image from '../images/earth-angels-logo.png'
+import { Parallax } from 'react-parallax'
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
@@ -40,8 +41,8 @@ export default function Home() {
   return (
     <>
       <>
-    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
-      <div className="hidden lg:flex gap-10">
+    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 bg-opacity-80 h-44 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-56 transition-all duration-200 w-full"}>
+      <div className="hidden text-sm xl:text-base lg:flex items-center gap-10 ml-2 mr-2">
         <Dropdown 
           arrowIcon={true}
           inline
@@ -107,7 +108,7 @@ export default function Home() {
       {/* MOBILE */}
       <div className="ml-0 xl:mr-6">
         <Link to='/'>
-          <img src={Image} alt="" className='w-[200px]'/>
+          <img src={Image} alt="" className='w-[300px] sm:w-[400px]'/>
         </Link>
       </div>
       <button 
@@ -117,7 +118,7 @@ export default function Home() {
         {!isOpen ? <GiHamburgerMenu /> : <></>}
       </button>
       {/**/}
-      <div className="hidden lg:flex items-center gap-10">
+      <div className="hidden lg:flex items-center text-sm xl:text-base gap-10 ml-2 mr-2">
           <Link to='/sustainability' className='hover:opacity-80'>
             Sustainability
           </Link>
@@ -125,7 +126,7 @@ export default function Home() {
             About Us
           </Link>
           <Link to='/contact'>
-            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+            <button className='bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 flex items-center text-black hover:text-white'>Contact Us</button>
           </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
@@ -185,7 +186,7 @@ export default function Home() {
         <WhatWeDo />
       </div>
       <div>
-        <WhatWeDo2 />
+        <ParallaxImage />
       </div>
       <div ref={designAndBuild}>
         <WhatWeDo3 />
