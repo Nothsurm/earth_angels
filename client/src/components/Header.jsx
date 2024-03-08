@@ -36,9 +36,12 @@ export default function Header() {
         <Link to='/visualisation' className='hover:opacity-80'>
           Visualisations
         </Link>
+        <Link to='/commercial-projects' className='hover:opacity-80'>
+          Commercial Projects
+        </Link>
       </div>
       {/* MOBILE */}
-      <div className="ml-0 xl:ml-52">
+      <div className="">
         <Link to='/'>
           <img src={Image} alt="" className='w-[200px]'/>
         </Link>
@@ -51,8 +54,8 @@ export default function Header() {
       </button>
       {/**/}
       <div className="hidden lg:flex items-center gap-10">
-        <Link to='/commercial-projects' className='hover:opacity-80'>
-          Commercial Projects
+        <Link to='/sustainability' className='hover:opacity-80'>
+          Sustainability
         </Link>
         <Link to='/about-us' className='hover:opacity-80'>
           About Us

@@ -11,6 +11,7 @@ import CommercialProjects from './pages/CommercialProjects.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
+import Sustainability from './pages/Sustainability.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path='/about-us' element={<AboutUs />}></Route>
       <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
       <Route path='/terms-conditions' element={<TermsAndConditions />}></Route>
+      <Route path='/sustainability' element={<Sustainability />}></Route>
     
     </Route>
   )
