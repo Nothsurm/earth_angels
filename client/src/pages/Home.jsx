@@ -6,13 +6,12 @@ import Testimonials from './DropdownComponents.jsx/Testimonials'
 import ParallaxImage from './DropdownComponents.jsx/Parallax'
 import WhatWeDo3 from './DropdownComponents.jsx/WhatWeDo3'
 import WhatWeDo4 from './DropdownComponents.jsx/WhatWeDo4'
-import { Dropdown, DropdownHeader } from 'flowbite-react'
+import { Dropdown } from 'flowbite-react'
 import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import KnowMore from './DropdownComponents.jsx/KnowMore'
 import { IoMdClose } from "react-icons/io";
 import Image from '../images/earth-angels-logo.png'
-import { Parallax } from 'react-parallax'
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
@@ -27,6 +26,7 @@ export default function Home() {
   const whatWeDo = useRef()
   const designAndBuild = useRef()
   const testimonials = useRef()
+  const home = useRef()
 
   const changeBackground = () => {
     if (window.scrollY > 90) {
@@ -50,6 +50,15 @@ export default function Home() {
             <span className='hover:opacity-80'>Home</span>
           }
         >
+          <Dropdown.Header>
+            <button
+              onClick={() => {
+                home.current.scrollIntoView({behavior: 'smooth'})
+              }}
+            >
+              <span className='hover:opacity-80'>Home</span>
+            </button>
+          </Dropdown.Header>
           <Dropdown.Header>
             <button
               onClick={() => {
@@ -162,7 +171,7 @@ export default function Home() {
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>
-            <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 text-black'>Contact Us</button>
+            <button className='bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 text-black hover:text-white'>Contact Us</button>
           </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
@@ -176,7 +185,7 @@ export default function Home() {
     )}
     </>
       {/* COMPONENTS */}
-      <div>
+      <div ref={home}>
         <Hero />
       </div>
       <div ref={introduction}>
