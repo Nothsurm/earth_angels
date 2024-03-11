@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <>
     <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
-      <div className="hidden lg:flex gap-10">
+      <div className="hidden lg:flex text-sm 2xl:text-base gap-10 ml-2 mr-2">
         <Link to='/' className='hover:opacity-80'>
           Home
         </Link>
@@ -43,7 +43,7 @@ export default function Header() {
       {/* MOBILE */}
       <div className="">
         <Link to='/'>
-          <img src={Image} alt="" className='w-[200px]'/>
+          <img src={Image} alt="" className='w-[300px] sm:w-[400px]'/>
         </Link>
       </div>
       <button 
@@ -53,7 +53,7 @@ export default function Header() {
         {!isOpen ? <GiHamburgerMenu /> : <></>}
       </button>
       {/**/}
-      <div className="hidden lg:flex items-center gap-10">
+      <div className="hidden lg:flex items-center text-sm 2xl:text-base gap-10 ml-2 mr-2">
         <Link to='/sustainability' className='hover:opacity-80'>
           Sustainability
         </Link>

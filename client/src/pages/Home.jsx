@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <>
     <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 bg-opacity-80 h-44 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-56 transition-all duration-200 w-full"}>
-      <div className="hidden text-sm xl:text-base lg:flex items-center gap-10 ml-2 mr-2">
+      <div className="hidden text-sm 2xl:text-base lg:flex items-center gap-10 ml-2 mr-2">
         <Dropdown 
           arrowIcon={true}
           inline
@@ -127,7 +127,7 @@ export default function Home() {
         {!isOpen ? <GiHamburgerMenu /> : <></>}
       </button>
       {/**/}
-      <div className="hidden lg:flex items-center text-sm xl:text-base gap-10 ml-2 mr-2">
+      <div className="hidden lg:flex items-center text-sm 2xl:text-base gap-10 ml-2 mr-2">
           <Link to='/sustainability' className='hover:opacity-80'>
             Sustainability
           </Link>

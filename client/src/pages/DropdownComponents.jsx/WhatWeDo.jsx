@@ -58,7 +58,7 @@ export default function WhatWeDo() {
                         src={Image2}
                         height="1000"
                         width="1000"
-                        className="h-[20rem] w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-[20rem] w-full object-fit rounded-xl group-hover/card:shadow-xl"
                         alt="thumbnail"
                       />
                     </CardItem>

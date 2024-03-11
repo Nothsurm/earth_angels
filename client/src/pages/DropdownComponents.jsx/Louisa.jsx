@@ -24,12 +24,12 @@ export default function Louisa() {
         <div className="flex-1 mt-12">
           <p className='text-center leading-loose'>”We are an experienced Design Agency specialising in affordable, sustainable, design based on 'Wellness Real Estate' principles.<br></br><br></br>
 
-          Using this approach we create beautiful spaces that prioritise environmental stewardship and the health and comfort of residents using passive design techniques and technologies, non-toxic and sustainable materials and energy efficiency.<br></br><br></br>
+          Using this approach we create beautiful spaces that prioritise environmental stewardship and health and comfort, using passive design techniques and technologies, non-toxic and sustainable materials and energy efficiency.<br></br><br></br>
 
           Earth Angels designs are future proof, luxurious and cost effective.”</p>
           <div className="flex flex-wrap justify-center mt-10 items-center gap-10">
-            <img src={ProfileImage} alt="img-here" className='w-28 h-28 rounded-full border'/>
-            <h1 className='font-semibold text-xl text-center'>Louisa Payne - Founder & CEO</h1>
+            <img src={ProfileImage} alt="img-here" className='w-32 h-32 rounded-full object-contain'/>
+            <h1 className='font-semibold text-xl text-center'>Louisa Bamford-Payne - Founder & CEO</h1>
           </div>
         </div>
         <div className="flex-1 flex-col mt-10">
