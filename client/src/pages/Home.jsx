@@ -4,7 +4,6 @@ import Louisa from './DropdownComponents.jsx/Louisa'
 import WhatWeDo from './DropdownComponents.jsx/WhatWeDo'
 import Testimonials from './DropdownComponents.jsx/Testimonials'
 import ParallaxImage from './DropdownComponents.jsx/Parallax'
-import WhatWeDo3 from './DropdownComponents.jsx/WhatWeDo3'
 import WhatWeDo4 from './DropdownComponents.jsx/WhatWeDo4'
 import { Dropdown } from 'flowbite-react'
 import { Link } from 'react-router-dom'
@@ -196,9 +195,6 @@ export default function Home() {
       </div>
       <div>
         <ParallaxImage />
-      </div>
-      <div ref={designAndBuild}>
-        <WhatWeDo3 />
       </div>
       <div>
         <WhatWeDo4 />

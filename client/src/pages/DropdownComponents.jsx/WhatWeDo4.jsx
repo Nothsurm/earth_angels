@@ -20,7 +20,7 @@ export default function ComingSoon() {
   })
 
   return (
-    <div className='text-stone-100'>
+    <div className='text-stone-100 mt-10'>
         <Parallax blur={1} strength={600} bgImage={Image}>
             <div className="h-fit flex flex-col bg-zinc-700 bg-opacity-75 p-2 rounded-md mx-auto lg:ml-auto lg:mr-96 mt-20 mb-20 max-w-xl mr-2 ml-2 sm:ml-0 sm:mr-0 hover:scale-110 animate">
                 <h1 className='text-4xl font-bold uppercase'>HELP WITH YOUR FINANCE STRATEGY</h1>
