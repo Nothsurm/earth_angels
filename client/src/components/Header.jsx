@@ -25,7 +25,7 @@ export default function Header() {
   window.addEventListener('scroll', changeBackground)
   return (
     <>
-    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-36 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-48 transition-all duration-200 w-full"}>
+    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-44 transition-all duration-200 w-full" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-56 transition-all duration-200 w-full"}>
       <div className="hidden lg:flex text-sm 2xl:text-base gap-10 ml-2 mr-2">
         <Link to='/' className='hover:opacity-80'>
           Home
@@ -61,7 +61,7 @@ export default function Header() {
           About Us
         </Link>
         <Link to='/contact' className='hover:opacity-80'>
-          <button className='bg-orange-400 px-4 py-2 rounded-lg font-semibold hover:bg-orange-500 transition ease-in-out delay-50 flex items-center text-black'>Contact Us</button>
+          <button className='bg-zinc-400 hover:bg-zinc-600 px-4 py-2 rounded-lg font-semibold transition ease-in-out delay-50 flex items-center text-black hover:text-white'>Contact Us</button>
         </Link>
         <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
         <button 

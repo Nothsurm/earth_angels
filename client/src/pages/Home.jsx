@@ -23,7 +23,7 @@ export default function Home() {
   const filePickerRef = useRef()
   const introduction = useRef()
   const whatWeDo = useRef()
-  const designAndBuild = useRef()
+  const aboutUs = useRef()
   const testimonials = useRef()
   const home = useRef()
 
@@ -80,17 +80,12 @@ export default function Home() {
           <Dropdown.Header>
             <button 
               onClick={() => {
-                designAndBuild.current.scrollIntoView({behavior: 'smooth'
+                aboutUs.current.scrollIntoView({behavior: 'smooth'
               })
               }}
             >
-              <span className='hover:opacity-80'>Design & Build</span>
+              <span className='hover:opacity-80'>About Us</span>
             </button>
-          </Dropdown.Header>
-          <Dropdown.Header>
-            <Link to='/about-us' className='hover:opacity-80'>
-              About Us
-            </Link>
           </Dropdown.Header>
           <Dropdown.Header>
             <button 
@@ -199,7 +194,7 @@ export default function Home() {
       <div>
         <WhatWeDo4 />
       </div>
-      <div>
+      <div ref={aboutUs}>
         <KnowMore />
       </div>
       <div ref={testimonials}>

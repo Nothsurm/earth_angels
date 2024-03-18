@@ -8,20 +8,6 @@ import { Link } from 'react-router-dom';
 
 export default function WhatWeDo() {
 
-  const animateSections = document.querySelectorAll('.animate')
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle('show', entry.isIntersecting)
-    })
-  }, {
-      rootMargin: '-50px',
-  })
-
-  animateSections.forEach(section => {
-      observer.observe(section)
-  })
-
   return (
     <div className='animate'>
       <h1 className='flex justify-center text-4xl font-bold mt-20'>WHAT WE DO...</h1>
