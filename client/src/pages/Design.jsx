@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import ImageMoodBoards from '../images/design-bedrooms.pdf'
 import { Parallax } from 'react-parallax'
-import HeroImage from '../images/design-livingroom.jpeg'
+import HeroImage from '../images/design-livingroom.jpg'
 import LivingRoomImage from '../images/bathroom-visualisations.jpeg'
 import SriLankaImage from '../images/design-srilanka.png'
 import RestaurantImage from '../images/design-restaurant.png'
