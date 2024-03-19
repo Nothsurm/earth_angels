@@ -63,15 +63,15 @@ export default function Design() {
                     Louisa owned and operated a boutique Interior Design company in Dubai for 12+ years specialising in upmarket private residence projects from refurbishments to Interiors and new builds. During this time she  also worked closely with Architects and Consultants in Dubai, the UK and Portugal on leading Concept Design work for Hospitality projects, specifically new Hospitality and Resort developments.</p><br></br><br></br>
                     <div className="flex flex-col gap-2">
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Experience</p>
                         </div>
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Reputation</p>
                         </div>
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Friendly guidance & expert advice</p>
                         </div>
                     </div>
@@ -85,15 +85,15 @@ export default function Design() {
                     The 3 pillars of our Sustainability approach in action;</p><br></br><br></br>
                     <div className="flex flex-col gap-2">
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Support our Local Community with stable permanent jobs</p>
                         </div>
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Support Local Producers & Service providers</p>
                         </div>
                         <div className="flex gap-3 items-center">
-                            <span className='text-orange-400 text-2xl'>-</span>
+                            <span className='text-zinc-300 text-2xl'>-</span>
                             <p>Have a low impact on the Environment in Build and Operation</p>
                         </div>
                     </div>
