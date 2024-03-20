@@ -129,7 +129,7 @@ export default function Home() {
             About Us
           </Link>
           <Link to='/contact'>
-            <button className='bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 flex items-center text-black hover:text-white'>Contact Us</button>
+            <button className='px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 flex items-center text-black hover:text-white bg-gradient-to-tr from-zinc-200 from-10% via-zinc-400 via-50% to-zinc-600 to-90%'>Contact Us</button>
           </Link>
           <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 

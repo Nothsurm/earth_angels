@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import ImageMoodBoards from '../images/design-bedrooms.pdf'
+import ImageMoodBoards from '../images/design-moodboard.png'
 import { Parallax } from 'react-parallax'
 import HeroImage from '../images/design-livingroom.jpg'
 import LivingRoomImage from '../images/bathroom-visualisations.jpeg'
@@ -28,7 +28,7 @@ export default function Design() {
         <div className="min-h-screen text-stone-700">
             <div className="flex flex-col sm:flex-row justify-center gap-10 max-w-6xl mx-auto">
                 <div className="max-w-lg text-center">
-                    <img src={Image} alt="" className='w-[550px] h-[400px] rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
+                    <img src={ImageMoodBoards} alt="" className='w-[550px] h-[400px] rounded-lg shadow-lg scale-75 hover:scale-90 transition duration-300'/>
                     <h1 className='font-bold text-lg'>Mood Boards</h1>
                     <p className='mt-4'>We use Mood Boards extensively to visualise our customers vision or to walk through our recommendations</p>
                 </div>
