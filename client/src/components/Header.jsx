@@ -99,7 +99,7 @@ export default function Header() {
             <span className='hover:opacity-80'>About us</span>
           </Link>
           <Link to='/contact' onClick={toggleNavbar}>
-            <button className='bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 text-black hover:text-white'>
+            <button className='px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 text-black hover:text-white bg-gradient-to-tr from-zinc-200 from-10% via-zinc-400 via-50% to-zinc-600 to-90%'>
               Contact Us
             </button>
           </Link>
