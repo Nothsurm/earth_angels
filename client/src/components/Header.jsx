@@ -3,7 +3,6 @@ import { useRef, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Image from '../images/earth-angels-logo.png'
-import ButtonBackground from '../images/button-background.jpeg'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
