@@ -10,12 +10,12 @@ export default function Visualisation() {
     <div>
       {/* SECTION 1 */}
         <Header />
-        <Parallax blur={2} strength={600} bgImage={Image}>
-            <div className="w-full min-h-screen flex flex-col gap-10 justify-center items-center">
-                <h1 className='text-6xl font-bold text-center mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md'>DESIGNS - RE-IMAGINED</h1>
+        <Parallax blur={2} strength={600} bgImage={Image} bgImageStyle={{ width: "100%", height:'100%'}}>
+            <div className="w-full h-[600px] md:min-h-screen flex flex-col gap-10 justify-center items-center">
+                <h1 className='text-4xl md:text-6xl font-bold text-center mt-60 sm:mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md'>DESIGNS - RE-IMAGINED</h1>
                 <div className="flex flex-row gap-2 text-white">
-                  <p className='title-1 uppercase font-semibold text-2xl bg-zinc-700 bg-opacity-40 p-2 rounded-md'>Evolve your space</p>
-                  <p className='title-2 uppercase font-semibold text-2xl bg-zinc-700 bg-opacity-40 p-2 rounded-md'> elevate your style</p>
+                  <p className='title-1 uppercase font-semibold text-xl md:text-2xl bg-zinc-700 bg-opacity-40 p-2 rounded-md'>Evolve your space</p>
+                  <p className='title-2 uppercase font-semibold text-xl md:text-2xl bg-zinc-700 bg-opacity-40 p-2 rounded-md'> elevate your style</p>
                 </div>
               <button className='title-3'>
                 <Link to='/design' className='uppercase bg-zinc-400 bg-opacity-50 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
@@ -24,7 +24,7 @@ export default function Visualisation() {
               </button>
             </div>
         </Parallax>
-        <div className="mt-10 flex flex-col sm:flex-row max-w-6xl mx-auto justify-around">
+        <div className="mt-10 flex flex-col flex-wrap sm:flex-row max-w-6xl mx-auto justify-around">
           <CardContainer className="inter-var">
             <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto sm:h-[30rem] rounded-xl border shadow-xl">
               <CardItem translateZ="100" className="w-full">
@@ -69,7 +69,7 @@ export default function Visualisation() {
               color: 'gray',
               borderColor: 'gray',
               height: '8px',
-              width: '400px',
+              width: '240px',
               position: 'absolute',
               top: '80%',
               left: '50%',
@@ -83,9 +83,9 @@ export default function Visualisation() {
         {/* SECTION 3 */}
         <div className="bg-zinc-800 text-stone-300">
           <div className="flex">
-            <img src={Image} alt="" className='mt-10 max-w-6xl mx-auto w-[30rem] sm:w-[50rem] h-auto sm:h-[30rem] rounded-xl shadow-xl hover:scale-105 transition duration-300'/>
+            <img src={Image} alt="" className='mt-10 max-w-6xl mx-auto w-[16rem] sm:w-[50rem] h-auto sm:h-[30rem] rounded-xl shadow-xl hover:scale-105 transition duration-300'/>
           </div>
-          <div className="flex flex-col sm:flex-row justify-around mt-10 max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-around mt-10 max-w-6xl mx-auto">
             <div className="flex flex-col items-center mt-10">
               <img src={Image} alt="" className='w-[50rem] h-[18rem] rounded-lg shadow-xl hover:scale-105 transition duration-300'/>
               <p className='font-bold uppercase'>Before</p>
@@ -112,7 +112,7 @@ export default function Visualisation() {
                 color: 'gray',
                 borderColor: 'gray',
                 height: '8px',
-                width: '400px',
+                width: '240px',
                 position: 'absolute',
                 top: '80%',
                 left: '50%',
@@ -130,7 +130,7 @@ export default function Visualisation() {
             <p className='font-semibold mt-6 max-w-4xl mx-auto'>At Earth Angels, we embrace the philosophy of 'Wellness Architecture & Design' and prioritise a sustainable approach to building and renovating. Our goal is to be environmentally friendly and socially responsible, while still offering affordable options that are stylish, luxurious, and indulgent.</p><br></br>
             <p className='font-semibold max-w-4xl mx-auto'>Picture a home that not only saves energy but also provides year-round thermal comfort with low-cost heating and cooling systems that can be easily controlled. This energy efficiency is enhanced by the use of renewable energy sources and battery storage.</p><br></br>
             <p className='font-semibold max-w-4xl mx-auto'>In addition, our solutions prioritise healthy living with fresh air cirulation and the use of non-toxic materials, sourced from companies that share our commitment to sustainability.</p>
-            <img src={Image} alt="" className='w-[60rem] h-[35rem] self-center rounded-lg shadow-xl hover:scale-105 transition duration-300 mt-10'/>
+            <img src={Image} alt="" className='w-[60rem] h-[20rem] sm:h-[35rem] self-center rounded-lg shadow-xl hover:scale-105 transition duration-300 mt-10'/>
             <p className='relative text-xl font-bold max-w-2xl mx-auto mt-10 mb-20'>We believe that by embracing these principles, we can create a better future for ourselves and future generations, while still enjoying the comfort and elegance we deserve.
             <hr
               style={{
@@ -138,7 +138,7 @@ export default function Visualisation() {
               color: 'gray',
               borderColor: 'gray',
               height: '8px',
-              width: '400px',
+              width: '240px',
               position: 'absolute',
               top: '100%',
               left: '50%',
@@ -146,6 +146,27 @@ export default function Visualisation() {
               }}
               className='mt-10'
             /></p>
+        </div>
+        {/* SECTION 5 */}
+        <div className="bg-zinc-800 text-stone-300">
+          <div className="flex flex-col max-w-3xl mx-auto text-center">
+            <h1 className='text-3xl font-bold mt-14'>Want to know more about us?</h1>
+            <p className='mt-8 font-semibold'>Our Founder & CEO, Louisa, with over 25 years of experience in the industry, is a highly skilled designer dedicated to helping clients realise their vision. By leveraging cutting-edge CGI visualisation technology, she is able to bring designs to life so clients can make informed decisions, be it a hotel or a home, that truly reflects their unique needs and aesthetic preferences.</p><br></br>
+            <p className='font-semibold'>Jeremy, our COO, has extensive experience in the management of luxury tourism hospitality operations, Sales & Revenue management and development projects over a career spanning more than 30 years. His expertise is the management of the development lifecycle of new tourism projects with a focus on project planning, space programming and design team management.</p><br></br>
+            <p className='font-semibold'>Contact Louisa or Jeremy today to schedule a consultation and begin your journey.</p>
+            <div className="flex flex-col gap-4 sm:flex-row justify-center mt-10">
+              <button className='mb-10 sm:mb-20 max-w-40 mx-auto sm:mx-0'>
+                <Link to='/about-us' className='uppercase text-zinc-800 bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
+                  Read More<FaArrowRight />
+                </Link>
+              </button>
+              <button className='mb-20 max-w-40 mx-auto sm:mx-0'>
+                <Link to='/contact' className='uppercase text-zinc-800 bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
+                  Contact Us<FaArrowRight />
+                </Link>
+              </button>
+            </div>
+          </div>
         </div>
     </div>
   )
