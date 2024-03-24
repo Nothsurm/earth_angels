@@ -12,8 +12,8 @@ export default function Design() {
   return (
     <div>
         <Header />
-        <Parallax blur={2} strength={600} bgImage={HeroImage}>
-            <div className="w-full h-[600px] flex justify-center items-center">
+        <Parallax blur={0} strength={600} bgImage={HeroImage}>
+            <div className="w-full h-[600px] sm:min-h-screen flex justify-center items-center">
                 <h1 className='text-6xl font-bold text-center mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md'>DESIGN SERVICES</h1>
             </div>
         </Parallax>
