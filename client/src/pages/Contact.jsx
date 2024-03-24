@@ -3,28 +3,65 @@ import { Parallax } from 'react-parallax'
 import { Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 import { MdPerson, MdEmail } from "react-icons/md";
 import Header from '../components/Header';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
     const form = useRef();
+    const [isChecked, setIsChecked] = useState(false);
+    const [loading, setLoading] = useState(false);
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
       e.preventDefault();
-  
-      emailjs
+
+      if (isChecked) {
+        setLoading(true)
+        await emailjs
         .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
-          publicKey: VITE_PUBLIC_KEY,
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            setLoading(false)
+            toast.success('Email Successfully Sent', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                theme: "dark"
+            })
           },
           (error) => {
-            console.log('FAILED...', error.text);
+            setLoading(false)
+            toast.error('Email not sent, please try again', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                theme: "dark"
+            })
           },
         );
+      } else {
+        toast.error('Please accept our Terms & Conditions', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            theme: "dark"
+        })
+      }
     };
+
+    const handleChange = event => {
+        if (event.target.checked) {
+          setIsChecked(true)
+        } else {
+          setIsChecked(false)
+        }
+      };
   return (
     <div>
         <Header />
@@ -48,11 +85,11 @@ export default function Contact() {
                             <Textarea placeholder='Message' rows={4} name="message" required />
                         </div>
                         <div className="flex items-center gap-2">
-                            <Checkbox id="remember" />
-                            <Label htmlFor="remember">I Accept Your Terms & Conditions</Label>
+                            <Checkbox id="checkbox" value={isChecked} onChange={handleChange}/>
+                            <Label htmlFor="checkbox">I Accept Your <Link to='/terms-conditions' className='text-blue-700 hover:underline'>Terms & Conditions</Link></Label>
                         </div>
                         <div className="">
-                        <button type='submit' className='uppercase bg-zinc-400 hover:bg-zinc-600 hover:text-white px-4 py-2 rounded-lg font-semibold transition ease-in-out delay-50'>Send Message</button>
+                        <button type='submit' className='uppercase bg-zinc-400 hover:bg-zinc-600 hover:text-white px-4 py-2 rounded-lg font-semibold transition ease-in-out delay-50'>{loading ? 'Sending...' : 'Send Message'}</button>
                         </div>
                     </form>
                 </div>
