@@ -12,15 +12,14 @@ export default function Design() {
   return (
     <div>
         <Header />
-        <Parallax blur={0} strength={600} bgImage={HeroImage}>
+        <Parallax blur={0} strength={600} bgImage={HeroImage} bgImageStyle={{ width: "100%", height:'100%'}}>
             <div className="w-full h-[600px] sm:min-h-screen flex justify-center items-center">
-                <h1 className='text-6xl font-bold text-center mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md'>DESIGN SERVICES</h1>
+                <h1 className='uppercase text-4xl sm:text-6xl font-bold text-center mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md'>Design is Personal</h1>
             </div>
         </Parallax>
         <div className="bg-zinc-600 w-full flex flex-col justify-center text-center text-white">
             <div className="max-w-3xl mx-auto mt-20 mb-20">
-                <h1 className='text-4xl font-bold'>DESIGN IS PERSONAL</h1>
-                <p className='mt-14 mr-2 ml-2 sm:ml-0 sm:mr-0'>Whether for a Brand or for an Individual, Design Style IS personal. We specialise in helping you develop and express this personality. Our visualisations and designs help to translate this into a reality and within your budget.<br></br><br></br>
+                <p className='text-xl leading-relaxed mr-2 ml-2 sm:ml-0 sm:mr-0'>Whether for a Brand or for an Individual, Design Style IS personal. We specialise in helping you develop and express this personality. Our visualisations and designs help to translate this into a reality and within your budget.<br></br><br></br>
 
                 We believe in Sustainability in Action and we will help you make the right choices for all our futures.</p>
             </div>
