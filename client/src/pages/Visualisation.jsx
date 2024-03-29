@@ -3,6 +3,9 @@ import LivingRoomImage from '../images/design-livingroom.jpg'
 import BedroomImage from '../images/img-carousel-5.jpg'
 import HeroImage from '../images/bathroom-visualisations.jpeg'
 import BeforeImage from '../images/before-image.jpeg'
+import BeforeImage1 from '../images/before-images-1.jpeg'
+import BeforeImage2 from '../images/before-images-2.jpeg'
+import BeforeImage3 from '../images/before-images-3.jpeg'
 import AfterImage from '../images/after-image.jpeg'
 import Image from '../images/house-image.jpg'
 import { Parallax } from 'react-parallax'
@@ -29,7 +32,7 @@ export default function Visualisation() {
             <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto sm:h-[22rem] rounded-xl border shadow-xl">
               <CardItem translateZ="100" className="w-full">
                 <img
-                  src={LivingRoomImage}
+                  src={BedroomImage}
                   height="1000"
                   width="1000"
                   className="h-[22rem] w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -42,7 +45,7 @@ export default function Visualisation() {
             <CardBody className="bg-gray-50 relative border-black/[0.1] w-auto sm:w-[30rem] h-auto sm:h-[22rem] rounded-xl border shadow-xl">
               <CardItem translateZ="100" className="w-full">
                 <img
-                  src={BedroomImage}
+                  src={LivingRoomImage}
                   height="1000"
                   width="1000"
                   className="h-[22rem] w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -125,8 +128,23 @@ export default function Visualisation() {
         </div>
 
         {/* SECTION 4 */}
+        <div className="flex flex-col max-w-6xl mx-auto mb-20">
+          <h1 className='uppercase text-2xl font-semibold self-center'>Villa before Images</h1>
+          <div className="flex flex-col sm:flex-row gap-4 mx-auto mt-10">
+            <img src={BeforeImage1} alt="" className='flex-1 w-[25rem] h-[15rem] rounded-lg shadow-xl hover:scale-105 transition duration-300' />
+            <img src={BeforeImage2} alt="" className='flex-1 w-[25rem] h-[15rem] rounded-lg shadow-xl hover:scale-105 transition duration-300' />
+            <img src={BeforeImage3} alt="" className='flex-1 w-[25rem] h-[15rem] rounded-lg shadow-xl hover:scale-105 transition duration-300' />
+          </div>
+          <h1 className='uppercase text-2xl font-semibold self-center mt-20'>Earth Angels  new designs and visualisation video</h1>
+          <video width='1000' height='600' controls className='mt-10 self-center rounded-lg shadow-xl'>
+
+          </video>
+        </div>
+
+        {/* SECTION 5 */}
+        <div className="bg-zinc-800 text-stone-300">
         <div className="flex flex-col justify-center text-center max-w-6xl mx-auto">
-            <h1 className='text-5xl font-bold'>Dedicated to Sustainable Solutions</h1>
+            <h1 className='text-5xl font-bold mt-10'>Dedicated to Sustainable Solutions</h1>
             <p className='font-semibold mt-6 max-w-4xl mx-auto'>At Earth Angels, we embrace the philosophy of 'Wellness Architecture & Design' and prioritise a sustainable approach to building and renovating. Our goal is to be environmentally friendly and socially responsible, while still offering affordable options that are stylish, luxurious, and indulgent.</p><br></br>
             <p className='font-semibold max-w-4xl mx-auto'>Picture a home that not only saves energy but also provides year-round thermal comfort with low-cost heating and cooling systems that can be easily controlled. This energy efficiency is enhanced by the use of renewable energy sources and battery storage.</p><br></br>
             <p className='font-semibold max-w-4xl mx-auto'>In addition, our solutions prioritise healthy living with fresh air cirulation and the use of non-toxic materials, sourced from companies that share our commitment to sustainability.</p>
@@ -147,8 +165,9 @@ export default function Visualisation() {
               className='mt-10'
             /></p>
         </div>
-        {/* SECTION 5 */}
-        <div className="bg-zinc-800 text-stone-300">
+        </div>
+        {/* SECTION 6 */}
+        <div className="">
           <div className="flex flex-col max-w-3xl mx-auto text-center">
             <h1 className='text-3xl font-bold mt-14'>Want to know more about us?</h1>
             <p className='mt-8 font-semibold'>Our Founder & CEO, Louisa, with over 25 years of experience in the industry, is a highly skilled designer dedicated to helping clients realise their vision. By leveraging cutting-edge CGI visualisation technology, she is able to bring designs to life so clients can make informed decisions, be it a hotel or a home, that truly reflects their unique needs and aesthetic preferences.</p><br></br>
