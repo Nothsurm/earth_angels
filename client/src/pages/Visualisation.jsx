@@ -135,7 +135,7 @@ export default function Visualisation() {
             <img src={BeforeImage2} alt="" className='flex-1 w-[25rem] h-[15rem] rounded-lg shadow-xl hover:scale-105 transition duration-300' />
             <img src={BeforeImage3} alt="" className='flex-1 w-[25rem] h-[15rem] rounded-lg shadow-xl hover:scale-105 transition duration-300' />
           </div>
-          <h1 className='uppercase text-2xl font-semibold self-center mt-20'>Earth Angels  new designs and visualisation video</h1>
+          <h1 className='uppercase text-2xl font-semibold self-center mt-20'>Earth Angels new designs and visualisation video</h1>
           <video width='1000' height='600' controls className='mt-10 self-center rounded-lg shadow-xl'>
 
           </video>

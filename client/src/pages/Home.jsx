@@ -10,17 +10,20 @@ import { Link } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi";
 import KnowMore from './DropdownComponents.jsx/KnowMore'
 import { IoMdClose } from "react-icons/io";
+import { RiLockPasswordFill } from "react-icons/ri";
 import Image from '../images/earth-angels-logo.png'
+import { Modal, Button } from "flowbite-react";
+import ModalContent from '../components/ModalContent'
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen)
   }
 
-  const filePickerRef = useRef()
   const introduction = useRef()
   const whatWeDo = useRef()
   const aboutUs = useRef()
@@ -131,11 +134,11 @@ export default function Home() {
           <Link to='/contact'>
             <button className='px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 flex items-center text-black hover:text-white bg-gradient-to-tr from-zinc-200 from-10% via-zinc-400 via-50% to-zinc-600 to-90%'>Contact Us</button>
           </Link>
-          <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
-            onClick={() => filePickerRef.current.click()}
-            className='hover:opacity-80'
+            onClick={() => setOpenModal(true)}
+            className='hover:opacity-80 flex items-center gap-1'
           >
+            <RiLockPasswordFill />
             Brochure
           </button>
       </div>
@@ -167,11 +170,11 @@ export default function Home() {
           <Link to='/contact' onClick={toggleNavbar}>
             <button className='px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 transition ease-in-out delay-50 text-black hover:text-white bg-gradient-to-tr from-zinc-200 from-10% via-zinc-400 via-50% to-zinc-600 to-90%'>Contact Us</button>
           </Link>
-          <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
-            onClick={() => filePickerRef.current.click()}
-            className='hover:opacity-80'
+            onClick={() => setOpenModal(true)}
+            className='self-center hover:opacity-80 flex items-center gap-1'
           >
+            <RiLockPasswordFill />
             Brochure
           </button>
         </div>
@@ -200,6 +203,11 @@ export default function Home() {
       <div ref={testimonials}>
         <Testimonials />
       </div>
+
+      {/* MODAL */}
+      <Modal show={openModal} onClose={() => setOpenModal(false)} size="sm">
+        <ModalContent />
+      </Modal>
     </>
   )
 }

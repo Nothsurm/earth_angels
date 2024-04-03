@@ -12,6 +12,8 @@ import AboutUs from './pages/AboutUs.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
 import Sustainability from './pages/Sustainability.jsx'
+import Brochure from './pages/ProtectedPages/Brochure.jsx'
+import ProtectedRoute from './pages/ProtectedPages/ProtectedRoute.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,10 +27,14 @@ const router = createBrowserRouter(
       <Route path='/privacy-policy' element={<PrivacyPolicy />}></Route>
       <Route path='/terms-conditions' element={<TermsAndConditions />}></Route>
       <Route path='/sustainability' element={<Sustainability />}></Route>
+      <Route path='' element={<ProtectedRoute />}>
+        <Route path='/brochure' element={<Brochure />}></Route>
+      </Route>
+
     </Route>
   )
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
 )

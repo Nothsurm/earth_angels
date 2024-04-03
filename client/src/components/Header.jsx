@@ -2,17 +2,19 @@ import { Link } from 'react-router-dom'
 import { useRef, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { RiLockPasswordFill } from "react-icons/ri";
 import Image from '../images/earth-angels-logo.png'
+import { Modal, Button } from "flowbite-react";
+import ModalContent from '../components/ModalContent'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [openModal, setOpenModal] = useState(false)
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen)
   }
-
-  const filePickerRef = useRef()
 
   const changeBackground = () => {
     if (window.scrollY > 90) {
@@ -64,13 +66,13 @@ export default function Header() {
             Contact Us
           </button>
         </Link>
-        <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
         <button 
-          onClick={() => filePickerRef.current.click()}
-          className='hover:opacity-80'
-        >
-          Brochure
-        </button>
+            onClick={() => setOpenModal(true)}
+            className='self-center hover:opacity-80 flex items-center gap-1'
+          >
+            <RiLockPasswordFill />
+            Brochure
+          </button>
       </div>
     </div>
     {/* MOBILE */}
@@ -102,16 +104,21 @@ export default function Header() {
               Contact Us
             </button>
           </Link>
-          <input type="file" accept='/images/*' ref={filePickerRef} hidden/>
           <button 
-            onClick={() => filePickerRef.current.click()}
-            className='hover:opacity-80'
+            onClick={() => setOpenModal(true)}
+            className='self-center hover:opacity-80 flex items-center gap-1'
           >
+            <RiLockPasswordFill />
             Brochure
           </button>
         </div>
       </div>
     )}
+
+    {/* MODAL */}
+    <Modal show={openModal} onClose={() => setOpenModal(false)} size="sm">
+        <ModalContent />
+      </Modal>
     </>
   )
 }
