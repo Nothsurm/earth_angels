@@ -6,6 +6,7 @@ import LivingRoomImage from '../images/bathroom-visualisations.jpeg'
 import SriLankaImage from '../images/design-srilanka.png'
 import RestaurantImage from '../images/design-restaurant.png'
 import ImageCarousel from '../components/ImageCarousel'
+import Video from '../videos/EarthAngels.mp4'
 
 export default function Design() {
 
@@ -100,12 +101,9 @@ export default function Design() {
             </div>
         </div>
         <div className="w-full h-[600px] flex justify-center">
-            <iframe 
-                width="700" 
-                height="600"
-                src="https://www.youtube.com/embed/7BGNAGahig8"
-            >
-            </iframe>
+            <video controls>
+                <source src={Video} type='video/mp4'/>
+            </video>
         </div>
     </div>
   )
