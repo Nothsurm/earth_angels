@@ -200,9 +200,9 @@ export default function Home() {
       <div ref={aboutUs}>
         <KnowMore />
       </div>
-      <div ref={testimonials}>
+      {/*<div ref={testimonials}>
         <Testimonials />
-      </div>
+  </div>*/}
 
       {/* MODAL */}
       <Modal show={openModal} onClose={() => setOpenModal(false)} size="sm">
