@@ -18,9 +18,8 @@ import ImageCarousel15 from '../images/img-carousel-13.jpg'
 export default function ImageCarousel() {
 
   return (
-    <div className="h-[30rem] mb-10 mt-10 lg:w-[900px] mx-auto bg-zinc-600 text-neutral-200 rounded-lg items-center">
+    <div className="h-[40rem] mb-10 mt-10 lg:w-[1200px] mx-auto bg-zinc-600 text-neutral-200 rounded-lg items-center">
       <Carousel slide={false}>
-        <img src={ImageCarousel1} alt="" />
         <img src={ImageCarousel2} alt="" />
         <img src={ImageCarousel3} alt="" />
         <img src={ImageCarousel4} alt="" />

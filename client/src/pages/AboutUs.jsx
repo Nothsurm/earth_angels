@@ -1,12 +1,11 @@
 import React from 'react'
 import Header from '../components/Header'
 import { Parallax } from 'react-parallax'
-import Image from '../images/bathroom-visualisations.jpeg'
-import backgroundImage from '../images/lodge-render.jpeg'
+import Image from '../images/mockup-office-sign.jpg'
 
 export default function AboutUs() {
   const myStyle = {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(${Image})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: 'fixed'
@@ -15,7 +14,7 @@ export default function AboutUs() {
     <div>
         <Header />
         {/* SECTION 1 */}
-        <Parallax blur={0} strength={600} bgImage={Image}>
+        <Parallax blur={0} strength={600} bgImage={Image} bgImageStyle={{ marginTop: '-200px'}}>
           <div className="w-full h-[600px] sm:min-h-screen flex flex-col gap-4 justify-center items-center">
             <h1 className='text-6xl uppercase font-bold text-center mt-40 text-white bg-zinc-700 bg-opacity-40 p-2 rounded-md title-1'>
               Working to create a future for our children
@@ -25,9 +24,9 @@ export default function AboutUs() {
 
         {/* SECTION 2 */}
         <div className="text-stone-100" style={myStyle}>
-            <div className="h-fit flex flex-col gap-20 mx-auto lg:mr-auto lg:ml-96 max-w-xl mr-2 ml-2 sm:ml-0 sm:mr-0">
+            <div className="h-fit flex flex-col gap-20 max-w-2xl ml-2 mr-2 lg:ml-40">
               <h1 className='text-6xl font-semibold mt-20'>About Us</h1>
-              <div className="text-2xl font-semibold leading-relaxed flex flex-col gap-20 mb-20">
+              <div className="leading-loose font-semibold flex flex-col gap-10 mb-20">
                 <p className='mt-20'>As our name suggests, our goal is to be environmentally friendly and socially responsible, while still offering affordable design options that are stylish, luxurious, and indulgent.</p>
                 <p>We also champion a home design that not only saves energy but also provides year-round thermal comfort with low-cost heating and cooling systems that can be easily controlled. This energy efficiency can be enhanced by the use of renewable energy sources and battery storage.</p>
                 <h1>In addition, we seek to encourage the prioritisation of healthy living with fresh air circulation and the use of non-toxic materials, sourced from companies that share our commitment to sustainability.</h1>

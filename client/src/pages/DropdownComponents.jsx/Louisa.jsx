@@ -1,5 +1,4 @@
-import Image1 from '../../images/mirrored-building-visoid.jpeg'
-import Image2 from '../../images/view-4-night.png'
+import Image1 from '../../images/home-2.jpeg'
 import ProfileImage from '../../images/louisa-image.jpeg'
 
 export default function Louisa() {
@@ -27,14 +26,13 @@ export default function Louisa() {
           Using this approach we create beautiful spaces that prioritise environmental stewardship and health and comfort, using passive design techniques and technologies, non-toxic and sustainable materials and energy efficiency.<br></br><br></br>
 
           Earth Angels designs are future proof, luxurious and cost effective.”</p>
-          <div className="flex flex-wrap justify-center mt-10 items-center gap-10">
-            <img src={ProfileImage} alt="img-here" className='w-32 h-32 rounded-full object-contain'/>
-            <h1 className='font-semibold text-xl text-center'>Louisa Bamford-Payne - Founder & CEO</h1>
+          <div className="flex flex-row flex-wrap justify-center mt-10 items-center gap-10">
+            <img src={ProfileImage} alt="img-here" className='flex-1 w-full h-56 rounded-xl object-contain'/>
+            <h1 className='flex-1 font-semibold text-xl text-center'>Louisa Bamford-Payne - Founder & CEO</h1>
           </div>
         </div>
         <div className="flex-1 flex-col mt-10">
-          <img src={Image1} alt="image" className='h-48 w-80 mx-auto rounded-md shadow-md hover:scale-105 transition duration-300'/>
-          <img src={Image2} alt="image" className='h-48 w-80 mt-10 mx-auto rounded-md shadow-md hover:scale-105 transition duration-300'/>
+          <img src={Image1} alt="image" className='h-full w-full mx-auto rounded-md shadow-md hover:scale-105 transition duration-300'/>
         </div>
       </div>
     </div>

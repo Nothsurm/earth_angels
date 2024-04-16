@@ -17,7 +17,7 @@ export default function KnowMore() {
                 Contact Louisa or Jeremy today to schedule a call and begin your journey.</p>
                 <div className="flex flex-wrap justify-center mt-10 items-center gap-10">
                 <button className='animate mt-4'>
-                  <Link to='/contact' className='uppercase bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 text-zinc-800 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
+                  <Link to='/about-us' className='uppercase bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 text-zinc-800 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
                     Learn More<FaArrowRight />
                   </Link>
                 </button>

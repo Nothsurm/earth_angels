@@ -8,7 +8,7 @@ import { Modal, Button } from "flowbite-react";
 import ModalContent from '../components/ModalContent'
 
 export default function Header() {
-  const [navbar, setNavbar] = useState(false)
+  //const [navbar, setNavbar] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [openModal, setOpenModal] = useState(false)
 
@@ -16,7 +16,7 @@ export default function Header() {
     setIsOpen(!isOpen)
   }
 
-  const changeBackground = () => {
+  /*const changeBackground = () => {
     if (window.scrollY > 90) {
       setNavbar(true)
     } else {
@@ -24,10 +24,10 @@ export default function Header() {
     }
   }
 
-  window.addEventListener('scroll', changeBackground)
+  window.addEventListener('scroll', changeBackground)*/
   return (
     <>
-    <div className={ navbar ? "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-44 transition-all duration-200 w-full bg-opacity-80" : "flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-56 transition-all duration-200 w-full"}>
+    <div className="flex justify-around fixed z-20 text-stone-300 items-center shadow-xl bg-zinc-700 h-44 transition-all duration-200 w-full bg-opacity-80">
       <div className="hidden lg:flex text-sm 2xl:text-base gap-10 ml-2 mr-2">
         <Link to='/' className='hover:opacity-80'>
           Home
