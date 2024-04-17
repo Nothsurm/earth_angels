@@ -19,7 +19,7 @@ export default function Louisa() {
 
   return (
     <div className='h-fit flex flex-wrap justify-center bg-zinc-800 text-stone-300'>
-      <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0 animate">
+      <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-20 max-w-6xl mb-10 mr-2 ml-2 sm:ml-0 sm:mr-0">
         <div className="flex-1 mt-12">
           <p className='text-center leading-loose'>”We are an experienced Design Agency specialising in affordable, sustainable, design based on 'Wellness Real Estate' principles.<br></br><br></br>
 
