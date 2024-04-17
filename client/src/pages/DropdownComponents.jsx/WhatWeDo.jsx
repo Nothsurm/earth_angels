@@ -1,7 +1,7 @@
 import Image1 from '../../images/general-arrangement.jpeg';
 import Image2 from '../../images/lodge-bedroom.jpg';
 import Image3 from '../../images/wine-experience.png';
-import Image4 from '../../images/concept-lodge.jpeg';
+import Image4 from '../../images/luxury-lodge.jpeg';
 import { FaArrowRight } from "react-icons/fa";
 import { CardBody, CardContainer, CardItem } from "../../components/3dCard";
 import { Link } from 'react-router-dom';
