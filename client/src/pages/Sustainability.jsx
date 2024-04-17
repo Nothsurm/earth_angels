@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax'
 import Image from '../images/dolphins.png'
 import Image1 from '../images/Pagoda.png'
 import Image2 from '../images/pool.jpeg'
+import Image3 from '../images/jaccuzi.jpeg'
 import backgroundImage from '../images/2-bed-lodge.jpeg'
 import Video from '../videos/SustainableLodge.mp4'
 import GlobalLogo from '../images/global-wellness-institute-logo.jpeg'
@@ -66,7 +67,7 @@ export default function Sustainability() {
               <p>Our team is led by a passionate career Design professional with a design style that focuses on quality and elegance down to the smallest detail.</p>
               <p>She was a Design Director in her 20s which gave her early and extensive International experience in procurement and the management of a diverse  supply chain from China, Turkey and Europe (Portugal and Italy in particular). A foundation that is as relevant today as it was then.</p>
               <p>We design with real life experiences & practicality in mind, carefully considering Wellness Design principles and human emotions. Our goal is to create comfortable, elegant environments that will foster happy memories for years to come.</p>
-              <img src={Image} alt="" className='w-full rounded-md hover:scale-105 transition duration-300' />
+              <img src={Image3} alt="" className='w-full rounded-md hover:scale-105 transition duration-300' />
               <p>We source sustainable Furniture Fixtures & Equipment to budget and always without sacrificing comfort, style or elegance.</p>
               <p>We offer a bespoke Interior Design service for clients who may want a unique design look that integrates their own furniture & loved items. After all, reducing waste & recycling  is at the heart of sustainability in practice.</p>
               <p className='text-2xl'>Underlining it all, we believe in Sustainability in Action and we we are here to help you make the right choices for all our futures.</p>
