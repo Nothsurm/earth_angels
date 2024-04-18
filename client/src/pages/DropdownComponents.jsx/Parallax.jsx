@@ -1,4 +1,4 @@
-import Image from '../../images/lodge-render.jpeg'
+import Image from '../../images/4-images-in-1.jpeg'
 
 export default function ParallaxImage() {
 

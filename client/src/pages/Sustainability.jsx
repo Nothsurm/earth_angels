@@ -5,13 +5,20 @@ import Image from '../images/dolphins.png'
 import Image1 from '../images/Pagoda.png'
 import Image2 from '../images/pool.jpeg'
 import Image3 from '../images/jaccuzi.jpeg'
-import backgroundImage from '../images/2-bed-lodge.jpeg'
+import backgroundImage from '../images/house-image.jpg'
+import backgroundImage1 from '../images/2-bed-lodge.jpeg'
 import Video from '../videos/SustainableLodge.mp4'
 import GlobalLogo from '../images/global-wellness-institute-logo.jpeg'
 
 export default function Sustainability() {
   const myStyle = {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `linear-gradient(to left, rgb(0 0 0), transparent), url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: 'fixed'
+  }
+  const myStyle1 = {
+    backgroundImage: `linear-gradient(to right, rgb(0 0 0), transparent), url(${backgroundImage1})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: 'fixed'
@@ -53,7 +60,7 @@ export default function Sustainability() {
         </div>
 
         {/* SECTION 4 */}
-        <div className="text-stone-100" style={myStyle}>
+        <div className="text-stone-100" style={myStyle1}>
           <div className="h-fit flex flex-col gap-20 max-w-2xl ml-2 mr-2 lg:ml-40">
             <h1 className='text-4xl font-semibold mt-20'>Our Approach to Sustainability</h1>
             <div className="leading-loose text-xl  font-semibold flex flex-col gap-20 mb-20">
