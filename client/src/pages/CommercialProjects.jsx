@@ -22,7 +22,29 @@ import Image3 from '../images/Pagoda.png'
 import Image4 from '../images/pool.jpeg'
 import Image5 from '../images/jaccuzi.jpeg'
 
+import CardImage1 from '../images/card-image1.jpg'
+import CardImage2 from '../images/card-image2.png'
+import CardImage3 from '../images/card-image3.png'
+import CardImage4 from '../images/card-image4.jpg'
+import CardImage5 from '../images/card-image5.png'
+import CardImage6 from '../images/card-image6.jpg'
+import CardImage7 from '../images/dolphins.png'
+import CardImage8 from '../images/card-image8.png'
+import CardImage9 from '../images/card-image9.png'
+
+import Image10 from '../images/collection-of-images.jpg'
+import Image11 from '../images/master-bedroom-suite.jpg'
+import Image12 from '../images/plans-1.jpg'
+import Image13 from '../images/plans-2.png'
+import Image14 from '../images/bathroom-suite.jpg'
+import Image15 from '../images/after-kitchen.jpg'
+import Image16 from '../images/livingroom-white-bg.jpeg'
+import Image17 from '../images/mockup-office-sign.jpg'
+
+import { FaArrowRight } from "react-icons/fa";
+
 import Video from '../videos/BedroomRoaming.mp4'
+import { Link } from 'react-router-dom'
 
 export default function CommercialProjects() {
   const myStyle = {
@@ -43,6 +65,17 @@ export default function CommercialProjects() {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: 'fixed'
+  }
+  const myStyle3 = {
+    backgroundImage: `linear-gradient(to left, rgb(0 0 0), transparent), url(${Image16})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: 'fixed'
+  }
+  const myStyle4 = {
+    backgroundImage: `linear-gradient(to right, rgb(0 0 0), transparent), url(${Image17})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   }
   return (
     <div>
@@ -153,18 +186,220 @@ export default function CommercialProjects() {
         </div>
 
         {/* SECTION 7 */}
-        <div className="bg-zinc-800 text-stone-300">
-          
+        <div>
+          <h1 className='mt-20 text-center text-6xl'>Marketing Materials Development</h1>
+          <div className="flex flex-row gap-10 flex-wrap max-w-7xl mx-auto mt-20 mb-20 text-stone-100">
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage1} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Identity of the project</p>
+                  <span className="text-sm">Described within an 'elevator pitch', bringing to life an immersive, aspirational & virtuous lifestyle.</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage2} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Logos & Brand Materials Plan</p>
+                  <span className="text-sm">Brand Logos & materials including;<br></br>
+                  • Brochures<br></br>
+                  • Promotional items (Flyer/Postcard)<br></br>
+                  • Billboards / Adverts<br></br>
+                  • Templates for Digital Communication<br></br>
+                  • Newsletter and other digital communications.</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage3} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Brand Guidelines</p>
+                  <span className="text-sm">Brand Manual governing the look and feel for all brand materials</span>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row gap-10 flex-wrap max-w-7xl mx-auto mt-20 mb-20 text-stone-100">
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage4} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Marketing Materials Design</p>
+                  <span className="text-sm">- Sales Brochure<br></br>
+                  - Promotional Flyers/Postcards<br></br>
+                  - Billboard<br></br>
+                  - Signage<br></br>
+                  - Canvas wrap at location<br></br>
+                  - Invitations (launch and other templates as may be requested)<br></br>
+                  - Adverts</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage5} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Visualisations</p>
+                  <span className="text-sm">Unlimited (Minimum 4K High Definition)<br></br><br></br>
+                  Includes virtual walkthroughs & META-AR (Augmented Reality)</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage6} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Videos</p>
+                  <span className="text-sm">
+                    <div className="flex flex-row gap-10">
+                    <div className="flex flex-col gap-4">
+                      <p>Whole Development</p>
+                      <p>Each typology or Area</p>
+                      <p>Lifestyle</p>
+                    </div>
+                    <div className="flex flex-col gap-4">
+                      <p>1min 30secs</p>
+                      <p>1min 30secs</p>
+                      <p>max 2min</p>
+                    </div>
+                    </div>
+                    <p className='mt-10'>Marketing promotion videos  as required</p>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row gap-10 flex-wrap max-w-7xl mx-auto mt-20 mb-20 text-stone-100">
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage7} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Commercial Plans</p>
+                  <span className="text-sm">Plans 2D, with all the commercial information.Plans with colours and furniture set-up</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage8} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Virtual Presentations</p>
+                  <span className="text-sm">For all typologies or areas.<br></br><br></br>
+                  Virtual views</span>
+              </div>
+            </div>
+            <div className="flex-1 group relative w-full transition-all h-[500px] overflow-hidden rounded-lg sm:w-[350px]">
+              <img 
+                  src={CardImage9} 
+                  alt="post cover" 
+                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+              />
+              <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
+                  <p className="text-lg line-clamp-2">Digital Content & Sales Suite</p>
+                  <span className="text-sm">Website or website page if to be integrated with an existing site (working with your IT provider).<br></br>
+                  • Digital interactive brochures (also on the marketing materials).<br></br>
+                  • Videos (scripts to be developed together):<br></br>
+                  • Global project video: 1m:30s<br></br>
+                  • Short videos for digital campaigns: 6 seg – 15 seg<br></br>
+                  • CGI Photos<br></br>
+                  • Support in defining the digital presentation of the project.</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* SECTION 8 */}
-        <div className="flex flex-col justify-center gap-10 max-w-2xl mx-auto text-center font-semibold leading-relaxed">
-          
+        <div className="text-stone-100" style={myStyle}>
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+            <h1 className='mt-20 text-6xl'>Sustainable Interior Design Process & Visualisations</h1>
+            <h2 className='text-3xl'>ID Concepts</h2>
+            <p>Initial design concepts are developed with consideration to brand aspirations, location, setting and target customer. At this stage we develop digital mood boards for initial approval by stakeholders.</p>
+            <span className='text-center text-sm'>Example Mood Board for Suite.</span>
+            <img src={Image10} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
+            <h2 className='text-3xl'>Design Development</h2>
+            <p>Progressing to Design Development we model each typology whilst developing the details of arrangement, colours, textures, materials, furniture and dressing (from cushions to artwork and every detail in between).</p>
+            <span className='text-center text-sm'>Example Visualisation (CGI) of Master Bedroom suite</span>
+            <img src={Image11} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
+            <h2 className='text-3xl'>Design Visualisations (CGI's, Videos & Walkthrough)</h2>
+            <p>We model all the (now digitally detailed) design elements and apply these to the general layout of each typology. These details are all modelled from sourced items, making this an ideal way to personalise customers Interior Design preferences, quickly and efficiently.</p>
+            <p>Our Visualisations are rendered at HQ or UHQ (ultra realistic) and the videos we produce will include 'dynamic' effects (such as a curtain moving with the sea breeze). Real life imagery can be used within the footage, especially when representing the 'personality' of a project, its location and the lifestyle it promises.</p>
+            <span className='text-center text-sm'>Example Video of Master Bedroom suite</span>
+            <img src="" alt="" />
+            <h2 className='text-3xl'>Commercial Plans</h2>
+            <p>Plans will be prepared for all different typologies/areas. These plans include;</p>
+            <p>Plans in 2D, with all commercial information to include Lighting & Finishes for floor, walls & ceiling. </p>
+            <p>Plans with colours and furniture set-up</p>
+            <img src={Image12} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
+            <img src={Image13} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
+            <h2 className='text-3xl'>Virtual Presentations</h2>
+            <p>As we will have modelled all typologies in 3d, virtual presentations and walkthrough functionalities will both be enabled and available.</p>
+            <h2 className='text-3xl'>Digital Content & Sales Suite</h2>
+            <p>In addition to our own designs, the digital content we can produce in support of a project includes content such as digital brochures of individual typology or facility as well as digital brochures for Lifestyle & local Information guides. These themes can include, but are not limited to, guides on;</p>
+            <p>Schools, Restaurants, Best Beaches, Golf Clubs, Sports, Shopping, Culture, Healthcare etc....</p>
+            <p>The following Video is one of our earlier (2016) promotional videos. This was of a new Resort development in Sri Lanka, using CGI's of Room Types, Restaurants and other facilities designed and visualised by us alongside lifestyle footage to showcase the destination and the experience awaiting guests. This full Design & Visualisation project was finished within 8 weeks, including the video which was used as the centre-piece of JA's trade show at ATM (Arabian Travel Market).</p>
+            <p className='mb-20'>We now have the technology to deliver Ultra high resolution dynamic 3d Videos of a project, blending CGI's of the property with real videography of aspirational lifestyle or the setting from drone and other footage.</p>
+          </div>
         </div>
 
         {/* SECTION 9 */}
-        <div className="bg-zinc-800 text-stone-300">
-          
+        <div>
+          <iframe width='100%' height='900'
+            src="https://www.youtube.com/embed/y6uRcjn1cMc">
+          </iframe>
+        </div>
+
+        {/* SECTION 10 */}
+        <div className="text-stone-100" style={myStyle3}>
+          <div className="h-fit flex flex-col gap-10 lg:ml-auto text-right max-w-2xl ml-2 mr-2 lg:mr-40 font-semibold text-xl">
+            <h1 className='text-3xl mt-20'>A seamless package can include the following;</h1>
+            <p className='mt-10'>The Identity of the project</p>
+            <p>Logos & Brand Materials Plans</p>
+            <p>Brand Guidelines</p>
+            <p>Marketing Materials Design</p>
+            <p>Interior Design</p>
+            <p>Visualisations (CGIs)</p>
+            <p>Videos</p>
+            <p>Commercial Plans</p>
+            <p>Digital Content & Sales Suite (Set up support)</p>
+            <p>Sustainable Sourcing - FF&E Packages & a fully personalised bespoke option</p>
+            <img src={Image14} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
+            <img src={Image15} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300 mb-20'/>
+          </div>
+        </div>
+
+        {/* SECTION 11 */}
+        <div className="text-stone-100 min-h-screen" style={myStyle4}>
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+            <h1 className='mt-20 text-6xl'>About Us</h1>
+            <p className='mt-20'>As our name suggests, our goal is to be environmentally friendly and socially responsible, while still offering affordable design options that are stylish, luxurious, and indulgent.</p>
+            <p className='flex flex-row gap-4 items-center'>For more information:
+              <button className='text-sm'>
+                <Link to='/about-us' className='uppercase bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
+                  Click Here<FaArrowRight />
+                </Link>
+              </button>
+            </p>
+          </div>
         </div>
     </div>
   )
