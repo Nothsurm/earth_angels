@@ -2,11 +2,11 @@ import Header from '../components/Header'
 import ImageMoodBoards from '../images/design-moodboard.png'
 import { Parallax } from 'react-parallax'
 import HeroImage from '../images/design-livingroom.jpg'
-import LivingRoomImage from '../images/bathroom-visualisations.jpeg'
+import LivingRoomImage from '../images/bedroom-visualisations.jpeg'
 import SriLankaImage from '../images/design-srilanka.png'
 import RestaurantImage from '../images/design-restaurant.png'
 import ImageCarousel from '../components/ImageCarousel'
-import Video from '../videos/SustainableLodge.mp4'
+import Video from '../videos/D2-bedroom.mp4'
 import { Link } from 'react-router-dom'
 
 import { FaArrowRight } from "react-icons/fa";

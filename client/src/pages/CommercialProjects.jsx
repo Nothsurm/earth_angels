@@ -1,9 +1,9 @@
 import Header from '../components/Header'
 import { Parallax } from 'react-parallax'
 import Image from '../images/hero-pool-villa.png'
-import Image1 from '../images/bathroom-visualisations.jpeg'
+import Image1 from '../images/background-hills.png'
 import Image2 from '../images/design-restaurant.png'
-import Image6 from '../images/livingroom-bg.jpeg'
+import Image6 from '../images/background-lantern.jpeg'
 import Image7 from '../images/interior.png'
 import Image8 from '../images/fancy-table.png'
 import Image9 from '../images/drawers.png'
@@ -38,8 +38,11 @@ import Image12 from '../images/plans-1.jpg'
 import Image13 from '../images/plans-2.png'
 import Image14 from '../images/bathroom-suite.jpg'
 import Image15 from '../images/after-kitchen.jpg'
-import Image16 from '../images/livingroom-white-bg.jpeg'
+import Image16 from '../images/background-seamless.png'
 import Image17 from '../images/mockup-office-sign.jpg'
+import Image18 from '../images/background-seaside.png'
+import Image19 from '../images/background-person.png'
+import Image20 from '../images/background-chairs.png'
 
 import { FaArrowRight } from "react-icons/fa";
 
@@ -77,6 +80,24 @@ export default function CommercialProjects() {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   }
+  const myStyle5 = {
+    backgroundImage: `linear-gradient(to right, rgb(0 0 0), transparent), url(${Image18})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: 'fixed'
+  }
+  const myStyle6 = {
+    backgroundImage: `linear-gradient(to right, rgb(0 0 0), transparent), url(${Image19})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: 'fixed'
+  }
+  const myStyle7 = {
+    backgroundImage: `linear-gradient(to right, rgb(0 0 0), transparent), url(${Image20})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: 'fixed'
+  }
   return (
     <div>
         <Header />
@@ -89,7 +110,7 @@ export default function CommercialProjects() {
 
         {/* SECTION 2 */}
         <div className="text-stone-100" style={myStyle}>
-          <div className="flex flex-col gap-20 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+          <div className="flex flex-col gap-20 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <p className='lg:mt-40 mt-20'>With a foundation rooted in sustainable and regenerative design practises, we have the expertise to bring your plans to life, whether for a new development, a renovation, remodelling or a re-habilitation project.</p>
             <p>Our commercial experience of the Design process enables detailed planning, quality control of the build process and advanced sales & marketing.</p>
             <p className='lg:mb-40 mb-20'>A recent example; these are the before images of a renovation and remodelling project for a town-house.</p>
@@ -125,7 +146,7 @@ export default function CommercialProjects() {
 
         {/* SECTION 4 */}
         <div className="text-stone-100 w-full" style={myStyle1}>
-          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <h1 className='mt-40 text-6xl'>Our Approach & Success Factors</h1>
             <h2 className='text-3xl'>Our Approach</h2>
             <p>Earth Angels has commercial experience that includes support of the marketing and sales process of development projects. </p>
@@ -136,8 +157,14 @@ export default function CommercialProjects() {
             <p>We enjoy being innovative. For example, combining 'invisible' solar panels on a pergola roof to provide pool heating and FAR Infra-red heating of outside spaces, enabling year round enjoyment with zero environmental impact or cost.</p>
             <img src={Image4} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
             <p>We have the expertise to deliver, and exceed, the deliverables of a full brief and for any project there are significant additional benefits in consolidating the brief under Earth Angels.  It will enable more 'key Success Factors'.</p>
-            <img src={Image5} alt="" className='w-full mx-auto rounded-md hover:scale-105 transition duration-300'/>
-            <h2 className='text-3xl'>Success Factors</h2>
+            <img src={Image5} alt="" className='w-full mb-20 mx-auto rounded-md hover:scale-105 transition duration-300'/>
+          </div>
+        </div>
+
+        {/* SECTION 5 */}
+        <div className="text-stone-100" style={myStyle5}>
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
+            <h2 className='text-3xl mt-20'>Success Factors</h2>
             <p>Success Factor 1 - The team is led by a passionate career Design professional with a design style that focuses on quality and elegance down to the smallest detail.</p>
             <p>Success Factor 2 - She was a Design Director in her 20s which gave her early and extensive International experience in procurement and the management of a diverse  supply chain from China, Turkey and Europe (Portugal and Italy in particular). A foundation that is as relevant today as it was then.</p>
             <p>Success Factor 3 - We have the ability to meet ambitious schedules through direct management and control of all key elements from inception to completion.</p>
@@ -154,7 +181,7 @@ export default function CommercialProjects() {
 
         {/* SECTION 5 */}
         <div className="text-stone-100" style={myStyle2}>
-          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <h2 className='mt-20 text-3xl'>Interior Design Style</h2>
             <p>Whether for a Brand or for an Individual, Design Style IS personal. We specialise in helping to develop and express this personality. Our visualisations and designs help to translate this personality into reality and within budget.</p>
             <img src={Image7} alt="" className='w-[500px] mx-auto rounded-md hover:scale-105 transition duration-300'/>
@@ -167,8 +194,8 @@ export default function CommercialProjects() {
         </div>
 
         {/* SECTION 6 */}
-        <div className="text-stone-100" style={myStyle}>
-          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+        <div className="text-stone-100" style={myStyle6}>
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <h2 className='mt-20 text-3xl'>Show Suite</h2>
             <p>Earth Angels can support the marketing and sales activities of any development by providing any and all marketing materials required.</p>
             <p>As part of this commitment we can even supply and curate a dedicated Show Suite in the location of your choice.</p>
@@ -193,7 +220,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage1} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Identity of the project</p>
@@ -204,7 +231,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage2} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Logos & Brand Materials Plan</p>
@@ -220,7 +247,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage3} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Brand Guidelines</p>
@@ -233,7 +260,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage4} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Marketing Materials Design</p>
@@ -250,7 +277,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage5} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Visualisations</p>
@@ -262,7 +289,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage6} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Videos</p>
@@ -289,7 +316,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage7} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Commercial Plans</p>
@@ -300,7 +327,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage8} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Virtual Presentations</p>
@@ -312,7 +339,7 @@ export default function CommercialProjects() {
               <img 
                   src={CardImage9} 
                   alt="post cover" 
-                  className="h-[200px] w-full object-cover hover group-hover:h-[240px] transition-all duration-300 z-20" 
+                  className="h-[200px] w-full object-cover z-20" 
               />
               <div className="p-5 flex flex-col gap-8 font-semibold bg-zinc-700 h-[300px]">
                   <p className="text-lg line-clamp-2">Digital Content & Sales Suite</p>
@@ -329,8 +356,8 @@ export default function CommercialProjects() {
         </div>
 
         {/* SECTION 8 */}
-        <div className="text-stone-100" style={myStyle}>
-          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+        <div className="text-stone-100" style={myStyle7}>
+          <div className="flex flex-col gap-10 w-full max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <h1 className='mt-20 text-6xl'>Sustainable Interior Design Process & Visualisations</h1>
             <h2 className='text-3xl'>ID Concepts</h2>
             <p>Initial design concepts are developed with consideration to brand aspirations, location, setting and target customer. At this stage we develop digital mood boards for initial approval by stakeholders.</p>
@@ -370,7 +397,7 @@ export default function CommercialProjects() {
 
         {/* SECTION 10 */}
         <div className="text-stone-100" style={myStyle3}>
-          <div className="h-fit flex flex-col gap-10 lg:ml-auto text-right max-w-2xl ml-2 mr-2 lg:mr-40 font-semibold text-xl">
+          <div className="h-fit flex flex-col gap-10 lg:ml-auto text-right max-w-2xl ml-2 mr-2 lg:mr-40 font-semibold">
             <h1 className='text-3xl mt-20'>A seamless package can include the following;</h1>
             <p className='mt-10'>The Identity of the project</p>
             <p>Logos & Brand Materials Plans</p>
@@ -389,7 +416,7 @@ export default function CommercialProjects() {
 
         {/* SECTION 11 */}
         <div className="text-stone-100 min-h-screen" style={myStyle4}>
-          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold text-xl">
+          <div className="flex flex-col gap-10 max-w-2xl ml-2 mr-2 lg:ml-40 leading-loose font-semibold">
             <h1 className='mt-20 text-6xl'>About Us</h1>
             <p className='mt-20'>As our name suggests, our goal is to be environmentally friendly and socially responsible, while still offering affordable design options that are stylish, luxurious, and indulgent.</p>
             <p className='flex flex-row gap-4 items-center'>For more information:

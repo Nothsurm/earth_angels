@@ -106,7 +106,7 @@ export default function Visualisation() {
               <img src={BathroomAfter} alt="" className='mt-2 h-[26rem] rounded-xl shadow-xl hover:scale-105 transition duration-300'/>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row mt-10 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row mt-10 mb-20 max-w-7xl mx-auto">
             <div className="flex-1 flex flex-col gap-2 items-center mt-10">
               <img src={BeforeImage} alt="" className='w-full h-[18rem] mt-20 rounded-lg shadow-xl hover:scale-105 transition duration-300'/>
               <p className='font-bold uppercase'>Before</p>
@@ -121,27 +121,6 @@ export default function Visualisation() {
               <img src={AfterImage} alt="" className='w-full h-[18rem] mt-20 rounded-lg shadow-xl hover:scale-105 transition duration-300'/>
               <p className='font-bold uppercase'>After</p>
             </div>
-          </div>
-          <div className="flex justify-center mt-10 mb-10">
-            <button className='relative mb-20'>
-              <Link to='/design' className='uppercase text-zinc-800 bg-zinc-400 px-4 py-2 rounded-lg font-semibold hover:bg-zinc-600 hover:text-white transition ease-in-out delay-50 flex items-center gap-2 mx-auto'>
-                Take a closer look<FaArrowRight />
-              </Link>
-              <hr
-                style={{
-                background: 'gray',
-                color: 'gray',
-                borderColor: 'gray',
-                height: '8px',
-                width: '240px',
-                position: 'absolute',
-                top: '80%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)'
-                }}
-                className='mt-10'
-              />
-            </button>
           </div>
         </div>
 
